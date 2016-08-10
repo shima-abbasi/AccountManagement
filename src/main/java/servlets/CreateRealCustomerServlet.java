@@ -1,5 +1,6 @@
 package servlets;
 
+import exceptions.NoValidatedCustomer;
 import logic.CustomerLogic;
 
 import javax.servlet.ServletException;
@@ -13,7 +14,7 @@ import java.sql.SQLException;
 /**
  * Created by Dotin school 5 on 8/6/2016.
  */
-public class CreateRealCutomerServlet extends HttpServlet {
+public class CreateRealCustomerServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest theRequest, HttpServletResponse theResponse)
             throws ServletException, IOException {
@@ -29,19 +30,13 @@ public class CreateRealCutomerServlet extends HttpServlet {
         String fatherName = theRequest.getParameter("fatherName");
         String dateOfBirth = theRequest.getParameter("dateOfBirth");
         String internationalID = theRequest.getParameter("internationalID");
-        String outputHTML = "";
 
         try {
             customerLogic.setCustomerInfo(firstName, lastName, fatherName, dateOfBirth, internationalID);
         } catch (SQLException e) {
             e.printStackTrace();
+        } catch (NoValidatedCustomer noValidatedCustomer) {
+            noValidatedCustomer.printStackTrace();
         }
-        //outputHTML = OutputGenerator.generate(realCustomer);
-
-
-        theResponse.setContentType("text/html; charset=UTF-8");
-        PrintWriter out = theResponse.getWriter();
-        out.println(outputHTML);
-
     }
 }

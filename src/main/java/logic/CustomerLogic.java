@@ -5,6 +5,7 @@ import dataAccess.RealCustomerCRUD;
 import dataAccess.connectionutil.DBConnection;
 import dataAccess.entity.LegalCustomer;
 import dataAccess.entity.RealCustomer;
+import exceptions.NoValidatedCustomer;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -14,26 +15,32 @@ import java.sql.SQLException;
  */
 public class CustomerLogic {
 
-    public void setCustomerInfo(String companyName, String registrationDate, String economicID) throws SQLException {
+    public void setCustomerInfo(String companyName, String registrationDate, String economicID) throws SQLException, NoValidatedCustomer {
 
         LegalCustomer legalCustomer = new LegalCustomer();
         LegalCustomerCRUD legalCustomerCRUD = new LegalCustomerCRUD();
-        legalCustomer.setCustomerNumber(generateCustomerNumber());
-        legalCustomer.setCompanyName(companyName);
-        legalCustomer.setRegistrationDate(registrationDate);
-        legalCustomer.setEconomicID(economicID);
-        legalCustomerCRUD.createLegalCustomer(legalCustomer);
+        if(legalCustomerCRUD.validateCustomer(economicID)) {
+            legalCustomer.setCustomerNumber(generateCustomerNumber());
+            legalCustomer.setCompanyName(companyName);
+            legalCustomer.setRegistrationDate(registrationDate);
+            legalCustomer.setEconomicID(economicID);
+            legalCustomerCRUD.createLegalCustomer(legalCustomer);
+        }
+        else throw new NoValidatedCustomer("noooooooooo");
     }
 
-    public void setCustomerInfo(String firstName, String lastName, String fatherName, String dateOfBirth, String internationalID) throws SQLException {
+    public void setCustomerInfo(String firstName, String lastName, String fatherName, String dateOfBirth, String internationalID) throws SQLException, NoValidatedCustomer {
         RealCustomer realCustomer = new RealCustomer();
         RealCustomerCRUD realCustomerCRUD = new RealCustomerCRUD();
-        realCustomer.setCustomerNumber(generateCustomerNumber());
-        realCustomer.setFirstName(firstName);
-        realCustomer.setLastName(lastName);
-        realCustomer.setFatherName(fatherName);
-        realCustomer.setDateOfBirth(dateOfBirth);
-        realCustomer.setInternationalID(internationalID);
+        if(realCustomerCRUD.validateCustomer(internationalID)) {
+            realCustomer.setCustomerNumber(generateCustomerNumber());
+            realCustomer.setFirstName(firstName);
+            realCustomer.setLastName(lastName);
+            realCustomer.setFatherName(fatherName);
+            realCustomer.setDateOfBirth(dateOfBirth);
+            realCustomer.setInternationalID(internationalID);
+        }
+        else throw  new NoValidatedCustomer("noooooo");
 
     }
 

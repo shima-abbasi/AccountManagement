@@ -1,5 +1,6 @@
 package servlets;
 
+import exceptions.NoValidatedCustomer;
 import logic.CustomerLogic;
 import logic.LegalCustomerLogic;
 
@@ -26,6 +27,8 @@ public class CreateLegalCustomerServlet extends HttpServlet {
             customerLogic.setCustomerInfo(companyName, registrationDate, economicID);
         } catch (SQLException e) {
             e.printStackTrace();
+        } catch (NoValidatedCustomer noValidatedCustomer) {
+            noValidatedCustomer.printStackTrace();
         }
 
     }

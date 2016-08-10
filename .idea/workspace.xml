@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57ccef13-96a7-4648-a2ff-f3178daef54e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/exceptions/NoValidatedCustomer.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/servlets/CreateRealCutomerServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/servlets/CreateRealCutomerServlet.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/servlets/CreateRealCutomerServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/CreateRealCustomerServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dataAccess/LegalCustomerCRUD.class" afterPath="$PROJECT_DIR$/target/classes/dataAccess/LegalCustomerCRUD.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dataAccess/RealCustomerCRUD.class" afterPath="$PROJECT_DIR$/target/classes/dataAccess/RealCustomerCRUD.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/logic/CustomerLogic.class" afterPath="$PROJECT_DIR$/target/classes/logic/CustomerLogic.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/servlets/CreateLegalCustomerServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlets/CreateLegalCustomerServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/dataAccess/LegalCustomerCRUD.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/dataAccess/LegalCustomerCRUD.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/dataAccess/RealCustomerCRUD.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/dataAccess/RealCustomerCRUD.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/logic/CustomerLogic.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/logic/CustomerLogic.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/servlets/CreateLegalCustomerServlet.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/servlets/CreateLegalCustomerServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataAccess/LegalCustomerCRUD.java" afterPath="$PROJECT_DIR$/src/main/java/dataAccess/LegalCustomerCRUD.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataAccess/RealCustomerCRUD.java" afterPath="$PROJECT_DIR$/src/main/java/dataAccess/RealCustomerCRUD.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/logic/CustomerLogic.java" afterPath="$PROJECT_DIR$/src/main/java/logic/CustomerLogic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/CreateLegalCustomerServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/CreateLegalCustomerServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/create_legal_customer.html" afterPath="$PROJECT_DIR$/src/main/webapp/create_legal_customer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/create_real_customer.html" afterPath="$PROJECT_DIR$/src/main/webapp/create_real_customer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/create_real_customer.html" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/create_real_customer.html" />
     </list>
     <ignored path="AccountManagement1-master.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,8 +63,8 @@
       <file leaf-file-name="CreateLegalCustomerServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CreateLegalCustomerServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+            <state relative-caret-position="554">
+              <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,56 +72,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerCRUD.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/CustomerCRUD.java">
+      <file leaf-file-name="NoValidatedCustomer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/exceptions/NoValidatedCustomer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/entity/Customer.java">
+      <file leaf-file-name="LegalCustomerCRUD.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/LegalCustomerCRUD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+            <state relative-caret-position="527">
+              <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
               <folding>
-                <element signature="e#182#183#0" expanded="true" />
-                <element signature="e#207#208#0" expanded="true" />
-                <element signature="e#240#241#0" expanded="true" />
-                <element signature="e#268#269#0" expanded="true" />
-                <element signature="e#309#310#0" expanded="true" />
-                <element signature="e#346#347#0" expanded="true" />
-                <element signature="e#406#407#0" expanded="true" />
-                <element signature="e#458#459#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <marker date="1470828216387" expanded="true" signature="755:803" placeholder="INSERT INTO customer... " />
+                <marker date="1470828216387" expanded="true" signature="972:995" placeholder="SELECT id FR... customer" />
+                <marker date="1470828216387" expanded="true" signature="1178:1270" placeholder="INSERT INTO legal_customer... " />
+                <marker date="1470828216387" expanded="true" signature="1727:1755" placeholder="SELECT econo... legal_customer" />
+                <marker date="1470828216387" expanded="true" signature="1727:1774" placeholder="SELECT * FRO... legal_customer" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RealCustomer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/entity/RealCustomer.java">
+      <file leaf-file-name="CreateRealCustomerServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CreateRealCustomerServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="e#325#326#0" expanded="false" />
-                <element signature="e#350#351#0" expanded="false" />
-                <element signature="e#383#384#0" expanded="false" />
-                <element signature="e#411#412#0" expanded="false" />
-                <element signature="e#447#448#0" expanded="false" />
-                <element signature="e#479#480#0" expanded="false" />
-                <element signature="e#634#635#0" expanded="false" />
-                <element signature="e#665#666#0" expanded="false" />
-                <element signature="e#817#818#0" expanded="false" />
-                <element signature="e#850#851#0" expanded="false" />
-                <element signature="e#1013#1014#0" expanded="false" />
-                <element signature="e#1047#1048#0" expanded="false" />
-                <element signature="e#1219#1220#0" expanded="false" />
-                <element signature="e#1257#1258#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="425">
+              <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -127,27 +129,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LegalCustomerCRUD.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/LegalCustomerCRUD.java">
+      <file leaf-file-name="create_real_customer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/create_real_customer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1470751017011" expanded="true" signature="772:820" placeholder="INSERT INTO customer... " />
-                <marker date="1470751017011" expanded="true" signature="1001:1024" placeholder="SELECT id FR... customer" />
-                <marker date="1470751017011" expanded="true" signature="1227:1319" placeholder="INSERT INTO legal_customer... " />
-                <marker date="1470751017011" expanded="true" signature="1874:1912" placeholder="SELECT econo... legal_customer" />
-              </folding>
+            <state relative-caret-position="32">
+              <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreateRealCutomerServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CreateRealCutomerServlet.java">
+      <file leaf-file-name="create_legal_customer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/create_legal_customer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="32" />
+            <state relative-caret-position="510">
+              <caret line="30" column="63" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -156,9 +152,15 @@
       <file leaf-file-name="RealCustomerCRUD.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/RealCustomerCRUD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="571">
+              <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1470828312092" expanded="true" signature="894:942" placeholder="INSERT INTO customer... " />
+                <marker date="1470828312092" expanded="true" signature="1111:1134" placeholder="SELECT id FR... customer" />
+                <marker date="1470828312092" expanded="true" signature="1317:1431" placeholder="INSERT INTO legal_customer... " />
+                <marker date="1470828312092" expanded="true" signature="1951:2002" placeholder="SELECT * FRO... legal_customer" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -166,17 +168,24 @@
       <file leaf-file-name="CustomerLogic.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/logic/CustomerLogic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+            <state relative-caret-position="112">
+              <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1470739458879" expanded="true" signature="1690:1726" placeholder="SELECT custo... customer" />
+                <marker date="1470826970551" expanded="true" signature="2076:2112" placeholder="SELECT custo... customer" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
@@ -197,12 +206,17 @@
         <option value="$PROJECT_DIR$/src/main/java/logic/LegalCustomerLogic.java" />
         <option value="$PROJECT_DIR$/src/main/java/dataAccess/dbConnection/DBConnection.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/CreateLegalCustomerServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/dataAccess/connectionutil/DBConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/dataAccess/entity/Customer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/CreateLegalCustomerServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/exceptions/NoValidatedCustomer.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/CreateRealCutomerServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/CustomerLogic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/CreateRealCustomerServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/dataAccess/LegalCustomerCRUD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dataAccess/RealCustomerCRUD.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/create_legal_customer.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/create_real_customer.html" />
       </list>
     </option>
   </component>
@@ -297,6 +311,36 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AccountManagement1-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AccountManagement1-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -372,7 +416,63 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="exceptions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AccountManagement1-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AccountManagement1-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="dataAccess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AccountManagement1-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AccountManagement1-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dataAccess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connectionutil" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -384,7 +484,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Intellij/Calculatation" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="settings.editor.selected.configurable" value="vcs.Mercurial" />
@@ -896,7 +996,7 @@
       <workItem from="1470726402007" duration="20834000" />
       <workItem from="1470752113972" duration="82000" />
       <workItem from="1470811374913" duration="3104000" />
-      <workItem from="1470814626006" duration="941000" />
+      <workItem from="1470814626006" duration="11813000" />
     </task>
     <task id="LOCAL-00001" summary="commit:D">
       <created>1470811937328</created>
@@ -912,18 +1012,26 @@
       <option name="project" value="LOCAL" />
       <updated>1470815232589</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit:D">
+      <created>1470815945728</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1470815945728</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28650000" />
+    <option name="totallyTimeSpent" value="39522000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -931,24 +1039,23 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286908" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286908" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0362117" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15041783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21336761" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21336761" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36072424" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39972144" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0069637885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -970,103 +1077,43 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="9" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="resultSet" />
+        <watch expression="resultSet" />
+        <watch expression="resultSet.next()" language="JAVA" custom="" />
+        <watch expression="resultSet" />
+        <watch expression="resultSet" />
+        <watch expression="resultSet" />
+        <watch expression="resultSet.getString(1)" language="JAVA" custom="" />
+        <watch expression="resultSet" />
+        <watch expression="resultSet.getString(1)" language="JAVA" custom="" />
+        <watch expression="resultSet.getString(2)" language="JAVA" custom="" />
+        <watch expression="resultSet.getString(3)" language="JAVA" custom="" />
+        <watch expression="resultSet.getString(4)" language="JAVA" custom="" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/LegalCustomerLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/RealCustomerLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/LegalCustomerCRUD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1470751017011" expanded="true" signature="772:820" placeholder="INSERT INTO customer... " />
-            <marker date="1470751017011" expanded="true" signature="1001:1024" placeholder="SELECT id FR... customer" />
-            <marker date="1470751017011" expanded="true" signature="1227:1319" placeholder="INSERT INTO legal_customer... " />
-            <marker date="1470751017011" expanded="true" signature="1874:1912" placeholder="SELECT econo... legal_customer" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CreateRealCutomerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/RealCustomerCRUD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/CustomerLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1470739458879" expanded="true" signature="1690:1726" placeholder="SELECT custo... customer" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CreateLegalCustomerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/CustomerCRUD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/entity/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
           <folding>
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#182#183#0" expanded="false" />
+            <element signature="e#207#208#0" expanded="false" />
+            <element signature="e#240#241#0" expanded="false" />
+            <element signature="e#268#269#0" expanded="false" />
+            <element signature="e#309#310#0" expanded="false" />
+            <element signature="e#346#347#0" expanded="false" />
+            <element signature="e#406#407#0" expanded="false" />
+            <element signature="e#458#459#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1116,15 +1163,16 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1470751017011" expanded="true" signature="772:820" placeholder="INSERT INTO customer... " />
-            <marker date="1470751017011" expanded="true" signature="1001:1024" placeholder="SELECT id FR... customer" />
-            <marker date="1470751017011" expanded="true" signature="1227:1319" placeholder="INSERT INTO legal_customer... " />
-            <marker date="1470751017011" expanded="true" signature="1874:1912" placeholder="SELECT econo... legal_customer" />
+            <marker date="1470828216387" expanded="true" signature="755:803" placeholder="INSERT INTO customer... " />
+            <marker date="1470828216387" expanded="true" signature="972:995" placeholder="SELECT id FR... customer" />
+            <marker date="1470828216387" expanded="true" signature="1178:1270" placeholder="INSERT INTO legal_customer... " />
+            <marker date="1470828216387" expanded="true" signature="1727:1755" placeholder="SELECT econo... legal_customer" />
+            <marker date="1470828216387" expanded="true" signature="1727:1774" placeholder="SELECT * FRO... legal_customer" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CreateRealCutomerServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CreateRealCustomerServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="32" />
@@ -1146,7 +1194,7 @@
           <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1470739458879" expanded="true" signature="1690:1726" placeholder="SELECT custo... customer" />
+            <marker date="1470826970551" expanded="true" signature="2076:2112" placeholder="SELECT custo... customer" />
           </folding>
         </state>
       </provider>
@@ -1174,14 +1222,14 @@
         <state relative-caret-position="272">
           <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
           <folding>
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#182#183#0" expanded="false" />
+            <element signature="e#207#208#0" expanded="false" />
+            <element signature="e#240#241#0" expanded="false" />
+            <element signature="e#268#269#0" expanded="false" />
+            <element signature="e#309#310#0" expanded="false" />
+            <element signature="e#346#347#0" expanded="false" />
+            <element signature="e#406#407#0" expanded="false" />
+            <element signature="e#458#459#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1231,15 +1279,16 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1470751017011" expanded="true" signature="772:820" placeholder="INSERT INTO customer... " />
-            <marker date="1470751017011" expanded="true" signature="1001:1024" placeholder="SELECT id FR... customer" />
-            <marker date="1470751017011" expanded="true" signature="1227:1319" placeholder="INSERT INTO legal_customer... " />
-            <marker date="1470751017011" expanded="true" signature="1874:1912" placeholder="SELECT econo... legal_customer" />
+            <marker date="1470828216387" expanded="true" signature="755:803" placeholder="INSERT INTO customer... " />
+            <marker date="1470828216387" expanded="true" signature="972:995" placeholder="SELECT id FR... customer" />
+            <marker date="1470828216387" expanded="true" signature="1178:1270" placeholder="INSERT INTO legal_customer... " />
+            <marker date="1470828216387" expanded="true" signature="1727:1755" placeholder="SELECT econo... legal_customer" />
+            <marker date="1470828216387" expanded="true" signature="1727:1774" placeholder="SELECT * FRO... legal_customer" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CreateRealCutomerServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CreateRealCustomerServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="32" />
@@ -1261,7 +1310,7 @@
           <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1470739458879" expanded="true" signature="1690:1726" placeholder="SELECT custo... customer" />
+            <marker date="1470826970551" expanded="true" signature="2076:2112" placeholder="SELECT custo... customer" />
           </folding>
         </state>
       </provider>
@@ -1300,10 +1349,11 @@
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1470751017011" expanded="true" signature="772:820" placeholder="INSERT INTO customer... " />
-            <marker date="1470751017011" expanded="true" signature="1001:1024" placeholder="SELECT id FR... customer" />
-            <marker date="1470751017011" expanded="true" signature="1227:1319" placeholder="INSERT INTO legal_customer... " />
-            <marker date="1470751017011" expanded="true" signature="1874:1912" placeholder="SELECT econo... legal_customer" />
+            <marker date="1470828216387" expanded="true" signature="755:803" placeholder="INSERT INTO customer... " />
+            <marker date="1470828216387" expanded="true" signature="972:995" placeholder="SELECT id FR... customer" />
+            <marker date="1470828216387" expanded="true" signature="1178:1270" placeholder="INSERT INTO legal_customer... " />
+            <marker date="1470828216387" expanded="true" signature="1727:1755" placeholder="SELECT econo... legal_customer" />
+            <marker date="1470828216387" expanded="true" signature="1727:1774" placeholder="SELECT * FRO... legal_customer" />
           </folding>
         </state>
       </provider>
@@ -1322,7 +1372,7 @@
           <caret line="22" column="148" selection-start-line="22" selection-start-column="148" selection-end-line="22" selection-end-column="148" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1470739458879" expanded="true" signature="1690:1726" placeholder="SELECT custo... customer" />
+            <marker date="1470826970551" expanded="true" signature="2076:2112" placeholder="SELECT custo... customer" />
           </folding>
         </state>
       </provider>
@@ -1357,13 +1407,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/create_legal_customer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9">
@@ -1376,16 +1419,6 @@
         <state relative-caret-position="357">
           <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/connectionutil/DBConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1424,25 +1457,85 @@
         <state relative-caret-position="272">
           <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
           <folding>
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#182#183#0" expanded="false" />
+            <element signature="e#207#208#0" expanded="false" />
+            <element signature="e#240#241#0" expanded="false" />
+            <element signature="e#268#269#0" expanded="false" />
+            <element signature="e#309#310#0" expanded="false" />
+            <element signature="e#346#347#0" expanded="false" />
+            <element signature="e#406#407#0" expanded="false" />
+            <element signature="e#458#459#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CreateLegalCustomerServlet.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar!/com/mysql/jdbc/NonRegisteringDriver.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+        <state relative-caret-position="125">
+          <caret line="92" column="80" selection-start-line="92" selection-start-column="80" selection-end-line="92" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar!/com/mysql/jdbc/PreparedStatement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="930" column="57" selection-start-line="930" selection-start-column="57" selection-end-line="930" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar!/com/mysql/jdbc/ResultSetImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="2886" column="66" selection-start-line="2886" selection-start-column="66" selection-end-line="2886" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar!/com/mysql/jdbc/ConnectionImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="1423" column="60" selection-start-line="1423" selection-start-column="60" selection-end-line="1423" selection-end-column="60" />
+          <folding>
+            <marker date="1470724341884" expanded="true" signature="79646:79675" placeholder="SELECT @@ses... " />
+            <marker date="1470724341884" expanded="true" signature="91144:91171" placeholder="SELECT @@ses... " />
+            <marker date="1470724341884" expanded="true" signature="96098:96113" placeholder="/* missingVa... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar!/com/mysql/jdbc/StatementImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="727" column="67" selection-start-line="727" selection-start-column="67" selection-end-line="727" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/connectionutil/DBConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/CustomerCRUD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1462,23 +1555,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CreateRealCutomerServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/CustomerLogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="32" />
+        <state relative-caret-position="112">
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1470826970551" expanded="true" signature="2076:2112" placeholder="SELECT custo... customer" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/create_legal_customer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="63" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/CustomerCRUD.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/create_real_customer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="32">
+          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/RealCustomerCRUD.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CreateRealCustomerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CreateLegalCustomerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exceptions/NoValidatedCustomer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -1486,27 +1608,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/CustomerLogic.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/RealCustomerCRUD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+        <state relative-caret-position="571">
+          <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1470739458879" expanded="true" signature="1690:1726" placeholder="SELECT custo... customer" />
+            <marker date="1470828312092" expanded="true" signature="894:942" placeholder="INSERT INTO customer... " />
+            <marker date="1470828312092" expanded="true" signature="1111:1134" placeholder="SELECT id FR... customer" />
+            <marker date="1470828312092" expanded="true" signature="1317:1431" placeholder="INSERT INTO legal_customer... " />
+            <marker date="1470828312092" expanded="true" signature="1951:2002" placeholder="SELECT * FRO... legal_customer" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/LegalCustomerCRUD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+        <state relative-caret-position="527">
+          <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1470751017011" expanded="true" signature="772:820" placeholder="INSERT INTO customer... " />
-            <marker date="1470751017011" expanded="true" signature="1001:1024" placeholder="SELECT id FR... customer" />
-            <marker date="1470751017011" expanded="true" signature="1227:1319" placeholder="INSERT INTO legal_customer... " />
-            <marker date="1470751017011" expanded="true" signature="1874:1912" placeholder="SELECT econo... legal_customer" />
+            <marker date="1470828216387" expanded="true" signature="755:803" placeholder="INSERT INTO customer... " />
+            <marker date="1470828216387" expanded="true" signature="972:995" placeholder="SELECT id FR... customer" />
+            <marker date="1470828216387" expanded="true" signature="1178:1270" placeholder="INSERT INTO legal_customer... " />
+            <marker date="1470828216387" expanded="true" signature="1727:1755" placeholder="SELECT econo... legal_customer" />
+            <marker date="1470828216387" expanded="true" signature="1727:1774" placeholder="SELECT * FRO... legal_customer" />
           </folding>
         </state>
       </provider>
