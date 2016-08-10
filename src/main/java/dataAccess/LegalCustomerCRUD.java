@@ -29,6 +29,11 @@ public class LegalCustomerCRUD extends CustomerCRUD {
             }
             PreparedStatement preparedStatement2 = connection.prepareStatement("INSERT INTO legal_customer (id, company_name,registration_date,economic_id) VALUES (?,?,?,?)");
             preparedStatement2.setInt(1, id);
+
+
+
+
+//            khkhkhb
             preparedStatement2.setString(2, companyName);
             preparedStatement2.setString(3, registrationDate);
             preparedStatement2.setString(4, economicID);
