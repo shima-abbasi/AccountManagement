@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <title>ثبت مشتری جدید</title>
+</head>
+<body>
+<div class="box-in">
+    <br>
+    <h1>لطفا اطلاعات مشتری را وارد نمایید</h1>
+    <br>
+    <form action="CreateLegalCustomerServlet">
+        <table align="center">
+            <tr>
+                <td> نام شرکت</td>
+                <td><input type="text" name="companyName"></td>
+            </tr>
+            <tr>
+                <td> تاریخ ثبت</td>
+                <td><input type="text" name="registrationDate"></td>
+            </tr>
+            <tr>
+                <td>کد اقتصادی</td>
+                <td><input type="text" name="economicID"></td>
+            </tr>
+        </table>
+        <input type="submit" class="button" value="ثبت اطلاعات">
+    </form>
+    <form action="legal_customer_management.html">
+        <button class="button" type="submit"> بازگشت به صفحه قبل</button>
+    </form>
+</div>
+</body>
+</html>
