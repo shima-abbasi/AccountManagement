@@ -192,3 +192,21 @@ body {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+.result-table
+{
+    width: 100%;
+    font-weight: bold;
+}
+.result-table th
+{
+    height: 50px;
+    text-align: right;
+    vertical-align: middle;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.result-table td
+{
+    border-bottom: 1px solid #ddd;
+}

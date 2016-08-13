@@ -1,15 +1,16 @@
 package logic;
 
-import dataAccess.LegalCustomerCRUD;
-import dataAccess.RealCustomerCRUD;
-import dataAccess.connectionutil.DBConnection;
-import dataAccess.entity.LegalCustomer;
-import dataAccess.entity.RealCustomer;
-import exceptions.NoValidatedCustomer;
+        import dataAccess.CustomerCRUD;
+        import dataAccess.LegalCustomerCRUD;
+        import dataAccess.RealCustomerCRUD;
+        import dataAccess.connectionutil.DBConnection;
+        import dataAccess.entity.LegalCustomer;
+        import dataAccess.entity.RealCustomer;
+        import exceptions.NoValidatedCustomer;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
+        import java.sql.ResultSet;
+        import java.sql.SQLException;
+        import java.util.ArrayList;
 
 /**
  * Created by Dotin school 5 on 8/7/2016.
@@ -61,8 +62,11 @@ public class CustomerLogic {
             return String.valueOf((Integer.parseInt(customerNumber) + 1));
         }
     }
-    public ArrayList<LegalCustomer> searchCustomer (String companyName , String registrationDate , String economicID) {
-    }
+
+    public ArrayList<LegalCustomer> searchCustomer(String customerNumber, String companyName, String registrationDate, String economicID) throws SQLException {
+        LegalCustomerCRUD legalCustomerCRUD = new LegalCustomerCRUD();
+        return legalCustomerCRUD.searchCustomer(customerNumber, companyName, registrationDate, economicID);
+
     }
 
 }

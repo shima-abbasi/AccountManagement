@@ -12,6 +12,10 @@
     <servlet-name>CreateLegalCustomerServlet</servlet-name>
     <servlet-class>servlets.CreateLegalCustomerServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>SearchLegalCustomerServlet</servlet-name>
+    <servlet-class>servlets.SearchLegalCustomerServlet</servlet-class>
+  </servlet>
 
 
   <servlet-mapping>
@@ -22,5 +26,10 @@
     <servlet-name>CreateLegalCustomerServlet</servlet-name>
     <url-pattern>/CreateLegalCustomerServlet</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchLegalCustomerServlet</servlet-name>
+    <url-pattern>/SearchLegalCustomerServlet</url-pattern>
+  </servlet-mapping>
+
 
 </web-app>

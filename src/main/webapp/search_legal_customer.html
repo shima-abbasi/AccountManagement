@@ -1,10 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link href="css/style.css" rel="stylesheet">
+    <title>جستجوی مشتری</title>
 </head>
 <body>
-
+<div class="box-in">
+    <br>
+    <h1>لطفا اطلاعات مشتری مورد نظر را وارد نمایید</h1>
+    <br>
+    <form action="SearchLegalCustomerServlet" method="get">
+        <table align="center">
+            <tr>
+                <td>شماره مشتری</td>
+                <td><input type="text" name="customerNumber"></td>
+            </tr>
+            <tr>
+                <td> نام شرکت</td>
+                <td><input type="text" name="companyName"></td>
+            </tr>
+            <tr>
+                <td> تاریخ ثبت</td>
+                <td><input type="text" name="registrationDate"></td>
+            </tr>
+            <tr>
+                <td>کد اقتصادی</td>
+                <td><input type="text" name="economicID"></td>
+            </tr>
+        </table>
+        <input type="submit" class="button" value="جستجو">
+    </form>
+    <form action="legal_customer_management.html">
+        <button class="button" type="submit"> بازگشت به صفحه قبل</button>
+    </form>
+</div>
 </body>
 </html>

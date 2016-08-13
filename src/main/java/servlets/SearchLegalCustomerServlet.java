@@ -33,14 +33,14 @@ public class SearchLegalCustomerServlet extends HttpServlet {
             String economicID = request.getParameter("economicID");
             String output="";
             try {
-                ArrayList<LegalCustomer> legalCustomers = customerLogic.se(customerNumber, companyName, registrationDate, economicID);
-                if(legalCustomers.size() == 0){
+                ArrayList<LegalCustomer> legalCustomerResult = customerLogic.searchCustomer(customerNumber, companyName, registrationDate, economicID);
+                if(legalCustomerResult.size() == 0){
                   //  output = OutputGenerator.generateMessage("مشتری با اطلاعات وارد شده وجود ندارد.");
                 }else {
-                    output = OutputGenerator.generateLegalCustomerResult(legalCustomers);
+                    output = OutputGenerator.generateLegalCustomerResult(legalCustomerResult);
                 }
             }catch (SQLException e){
-               // output = OutputGenerator.generateMessage(e.getMessage());
+                System.out.println(e.getMessage());
             }
 
             response.setContentType("text/html; charset=UTF-8");

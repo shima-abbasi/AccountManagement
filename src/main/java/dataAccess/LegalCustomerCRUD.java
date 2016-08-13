@@ -1,6 +1,7 @@
 package dataAccess;
 
 import dataAccess.connectionutil.DBConnection;
+import dataAccess.entity.Customer;
 import dataAccess.entity.LegalCustomer;
 import exceptions.NoValidatedCustomer;
 
@@ -47,10 +48,45 @@ public class LegalCustomerCRUD extends CustomerCRUD {
 
 
     }
-//    public ArrayList searchCustomer ()
-//    {
-//
-//
-//    }
+    public ArrayList searchCustomer (String customerNumber, String companyName , String registrationDate , String economicID) throws SQLException {
+        PreparedStatement preparedStatement = generatePrepareStatement( customerNumber, companyName, registrationDate, economicID);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        ArrayList<LegalCustomer> legalCustomerResult = new ArrayList<LegalCustomer>();
+        while (resultSet.next()) {
+            LegalCustomer legalCustomer = new LegalCustomer();
+            legalCustomer.setCustomerNumber(resultSet.getString("customer_number"));
+            legalCustomer.setCompanyName(resultSet.getString("company_name"));
+            legalCustomer.setRegistrationDate(resultSet.getString("registration_date"));
+            legalCustomer.setEconomicID(resultSet.getString("economic_id"));
+            legalCustomerResult.add(legalCustomer);
+        }
+        return legalCustomerResult;
+    }
+    public  PreparedStatement generatePrepareStatement (String customerNumber ,String companyName , String registrationDate , String economicID) throws SQLException {
+
+        StringBuilder stringBuilder = new StringBuilder();
+
+        if(customerNumber!="" | companyName!="" | registrationDate!="" | economicID!="") {
+            stringBuilder.append("SELECT * FROM legal_customer JOIN customer  WHERE");
+            if (customerNumber != "") {
+                stringBuilder.append(" customer_number=" + customerNumber + " AND");
+            }
+            if (companyName != "") {
+                stringBuilder.append(" company_name=" + companyName + " AND");
+            }
+            if (registrationDate != "") {
+                stringBuilder.append(" registrationDate=" + registrationDate + " AND");
+            }
+            if (economicID != "") {
+                stringBuilder.append(" economicID=" + economicID);
+            }
+        }
+        else {
+            stringBuilder.append("SELECT * FROM legal_customer JOIN customer WHERE customer.id = legal_customer.id");
+        }
+        PreparedStatement preparedStatement = connection.prepareStatement(stringBuilder.toString());
+
+        return preparedStatement ;
+    }
 
 }
