@@ -1,7 +1,9 @@
 package servlets;
 
+import dataAccess.entity.RealCustomer;
 import exceptions.NoValidatedCustomer;
 import logic.CustomerLogic;
+import output.OutputGenerator;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -16,12 +18,12 @@ import java.sql.SQLException;
  */
 public class CreateRealCustomerServlet extends HttpServlet {
 
-    protected void doPost(HttpServletRequest theRequest, HttpServletResponse theResponse)
+    protected void doPost(HttpServletRequest theRequest, HttpServletResponse response)
             throws ServletException, IOException {
 
     }
 
-    protected void doGet(HttpServletRequest theRequest, HttpServletResponse theResponse)
+    protected void doGet(HttpServletRequest theRequest, HttpServletResponse response)
             throws ServletException, IOException {
         theRequest.setCharacterEncoding("UTF-8");
         CustomerLogic customerLogic = new CustomerLogic();
@@ -30,13 +32,18 @@ public class CreateRealCustomerServlet extends HttpServlet {
         String fatherName = theRequest.getParameter("fatherName");
         String dateOfBirth = theRequest.getParameter("dateOfBirth");
         String internationalID = theRequest.getParameter("internationalID");
+        String output = "";
 
         try {
-            customerLogic.setCustomerInfo(firstName, lastName, fatherName, dateOfBirth, internationalID);
+            RealCustomer realCustomer =customerLogic.setCustomerInfo(firstName, lastName, fatherName, dateOfBirth, internationalID);
+            output = OutputGenerator.generateRealCustomer(realCustomer);
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (NoValidatedCustomer noValidatedCustomer) {
             noValidatedCustomer.printStackTrace();
         }
+        response.setContentType("text/html; charset=UTF-8");
+        PrintWriter out = response.getWriter();
+        out.println(output);
     }
 }
