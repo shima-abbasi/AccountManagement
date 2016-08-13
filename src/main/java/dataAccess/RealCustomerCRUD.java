@@ -6,6 +6,7 @@ import dataAccess.entity.RealCustomer;
 import exceptions.NoValidatedCustomer;
 
 import java.sql.*;
+import java.util.ArrayList;
 
 /**
  * Created by Dotin school 5 on 8/7/2016.
@@ -20,6 +21,7 @@ public class RealCustomerCRUD extends CustomerCRUD {
         }
         return true;
     }
+
     public void createRealCustomer(RealCustomer realCustomer) throws SQLException {
         String customerNumber = realCustomer.getCustomerNumber();
         String firstName = realCustomer.getFirstName();
@@ -49,4 +51,50 @@ public class RealCustomerCRUD extends CustomerCRUD {
 
     }
 
+    public ArrayList<RealCustomer> searchCustomer(String customerNumber, String firstName, String lastName, String fatherName, String dateOfBirth, String internationalID) throws SQLException {
+        PreparedStatement preparedStatement = generatePreparedStatement(customerNumber, firstName, lastName, fatherName, dateOfBirth, internationalID);
+        ArrayList<RealCustomer> realCustomerResult = new ArrayList<RealCustomer>();
+        ResultSet resultset = preparedStatement.executeQuery();
+        while (resultset.next()) {
+            RealCustomer realCustomer = new RealCustomer();
+            realCustomer.setId(resultset.getInt("id"));
+            realCustomer.setCustomerNumber(resultset.getString("customer_number"));
+            realCustomer.setFirstName(resultset.getString("first_name"));
+            realCustomer.setLastName(resultset.getString("last_name"));
+            realCustomer.setFatherName(resultset.getString("father_name"));
+            realCustomer.setDateOfBirth(resultset.getString("date_of_birth"));
+            realCustomer.setInternationalID(resultset.getString("international_id"));
+            realCustomerResult.add(realCustomer);
+        }
+        return realCustomerResult;
+    }
+
+    public PreparedStatement generatePreparedStatement(String customerNumber, String firstName, String
+            lastName, String fatherName, String dateOfBirth, String internationalID) throws SQLException {
+        StringBuilder stringBuilder = new StringBuilder();
+        if (customerNumber != "" | firstName != "" | lastName != "" | fatherName != "" | dateOfBirth != "" | internationalID != "") {
+            stringBuilder.append("SELECT * FROM (real_customer JOIN customer ON customer.id = real_customer.id) WHERE ");
+            if (customerNumber != "" && customerNumber != null) {
+                stringBuilder.append(" customer_number =" + customerNumber + " AND");
+            }
+            if (firstName != "") {
+                stringBuilder.append(" first_name =" + firstName + " AND");
+            }
+            if (lastName != "") {
+                stringBuilder.append(" last_name =" + lastName + " AND");
+            }
+            if (fatherName != "") {
+                stringBuilder.append(" father_name =" + fatherName + " AND");
+            }
+            if (dateOfBirth != "") {
+                stringBuilder.append(" date_of_birth =" + dateOfBirth + " AND");
+            }
+            if (internationalID != "") {
+                stringBuilder.append(" international_id =" + internationalID);
+            }
+        } else
+            stringBuilder.append("SELECT * FROM real_customer JOIN customer ON customer.id = real_customer.id");
+        PreparedStatement preparedStatement = connection.prepareStatement(stringBuilder.toString());
+        return preparedStatement;
+    }
 }

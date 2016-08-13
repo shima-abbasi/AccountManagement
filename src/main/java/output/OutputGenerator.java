@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * Created by Dotin school 5 on 8/13/2016.
  */
 public class OutputGenerator {
-    public static String generateLegalCustomer(LegalCustomer legalCustomer) {
+    public static String generateLegalCustomer(LegalCustomer legalCustomer ) {
 
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("<!DOCTYPE html>");
@@ -126,7 +126,7 @@ public class OutputGenerator {
             stringBuilder.append("                            <td>" + legalCustomer.getCustomerNumber() + "</td>");
             stringBuilder.append("                            <td>" + legalCustomer.getCompanyName() + "</td>");
             stringBuilder.append("                            <td>" + legalCustomer.getRegistrationDate() + "</td>");
-            stringBuilder.append("                            <td>" + legalCustomer.getEconomicID()+ "</td>");
+            stringBuilder.append("                            <td>" + legalCustomer.getEconomicID() + "</td>");
             stringBuilder.append("                            <td><a href=DeleteLegalCustomerServlet?id=" + legalCustomer.getId() + " class=form>حذف</a>");
             stringBuilder.append("                            <a href=UpdateLegalCustomerServlet?id=" + legalCustomer.getId() + " class=form>اصلاح</a></td>");
         }
@@ -143,5 +143,78 @@ public class OutputGenerator {
         return stringBuilder.toString();
     }
 
+    public static String generateRealCustomerResult(ArrayList<RealCustomer> realCustomerResult) {
+
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("<!DOCTYPE html>");
+        stringBuilder.append("<html lang=fa>");
+        stringBuilder.append("<head>");
+        stringBuilder.append("    <meta charset=UTF-8>");
+        stringBuilder.append("    <link href=css/style.css rel=stylesheet>");
+        stringBuilder.append("    <title>جستجوی مشتری</title>");
+        stringBuilder.append("</head>");
+        stringBuilder.append("<body>");
+        stringBuilder.append("            <div class=box-in>");
+        stringBuilder.append("                <br>");
+        stringBuilder.append("                <h1>نتایج جستجو به شرح زیر است</h1>");
+        stringBuilder.append("                <br>");
+
+        stringBuilder.append("                    <table class=result-table>");
+        stringBuilder.append("                        <tr>");
+        stringBuilder.append("                            <td> نام </td>");
+        stringBuilder.append("                            <td> نام خانوادگی</td>");
+        stringBuilder.append("                            <td>نام پدر</td>");
+        stringBuilder.append("                            <td>تاریخ تولد</td>");
+        stringBuilder.append("                            <td>کد ملی</td>");
+        stringBuilder.append("                            <td>شماره مشتری</td>");
+        stringBuilder.append("                            <td>انجام عملیات</td>");
+        stringBuilder.append("                        </tr>");
+        for (RealCustomer realCustomer : realCustomerResult) {
+            stringBuilder.append("                        <tr>");
+            stringBuilder.append("                            <td>" + realCustomer.getFirstName() + "</td>");
+            stringBuilder.append("                            <td>" + realCustomer.getLastName() + "</td>");
+            stringBuilder.append("                            <td>" + realCustomer.getFatherName() + "</td>");
+            stringBuilder.append("                            <td>" + realCustomer.getDateOfBirth() + "</td>");
+            stringBuilder.append("                            <td>" + realCustomer.getInternationalID() + "</td>");
+            stringBuilder.append("                            <td>" + realCustomer.getCustomerNumber() + "</td>");
+            stringBuilder.append("                            <td><a href=DeleteRealCustomerServlet?id=" + realCustomer.getId() + " class=form>حذف</a>");
+            stringBuilder.append("                            <a href=UpdateRealCustomerServlet?id=" + realCustomer.getId() + " class=form>اصلاح</a></td>");
+        }
+        stringBuilder.append("                    </table>");
+        stringBuilder.append("    <form action=\"search_real_customer.html\">");
+        stringBuilder.append("         <button class=\"button\" type=\"submit\"> بازگشت به صفحه قبل</button>");
+        stringBuilder.append("    </form>");
+        stringBuilder.append("            </div>");
+        stringBuilder.append("</body>");
+        stringBuilder.append("</html>");
+
+        return stringBuilder.toString();
+    }
+
+
+    public static String generateMessage(String message, String path) {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("<!DOCTYPE html>");
+        stringBuilder.append("<html lang=fa>");
+        stringBuilder.append("<head>");
+        stringBuilder.append("    <meta charset=UTF-8>");
+        stringBuilder.append("    <link href=css/style.css rel=stylesheet>");
+        stringBuilder.append("    <title>ییام سیستم</title>");
+        stringBuilder.append("</head>");
+        stringBuilder.append("<body>");
+        stringBuilder.append("<div class=box-in>");
+        stringBuilder.append("  <br>");
+        stringBuilder.append("    <h1>" + message + "</h1>");
+        stringBuilder.append("  </br>");
+        stringBuilder.append("    <form action=" + path + ">");
+        stringBuilder.append("         <button class=\"button\" type=\"submit\"> بازگشت به صفحه قبل</button>");
+        stringBuilder.append("    </form>");
+        stringBuilder.append("</div>");
+        stringBuilder.append("</body>");
+        stringBuilder.append("</html>");
+
+        return stringBuilder.toString();
+    }
 }
+
 

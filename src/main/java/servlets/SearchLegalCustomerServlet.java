@@ -35,7 +35,7 @@ public class SearchLegalCustomerServlet extends HttpServlet {
             try {
                 ArrayList<LegalCustomer> legalCustomerResult = customerLogic.searchCustomer(customerNumber, companyName, registrationDate, economicID);
                 if(legalCustomerResult.size() == 0){
-                  //  output = OutputGenerator.generateMessage("مشتری با اطلاعات وارد شده وجود ندارد.");
+                    output = OutputGenerator.generateMessage("مشتری با اطلاعات وارد شده وجود ندارد." , "search_legal_customer.html");
                 }else {
                     output = OutputGenerator.generateLegalCustomerResult(legalCustomerResult);
                 }

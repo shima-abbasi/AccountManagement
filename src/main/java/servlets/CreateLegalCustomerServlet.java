@@ -33,7 +33,7 @@ public class CreateLegalCustomerServlet extends HttpServlet {
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (NoValidatedCustomer noValidatedCustomer) {
-            noValidatedCustomer.printStackTrace();
+            output = OutputGenerator.generateMessage("مشتری مورد نظر مورد قبول نمیباشد" , "search_legal_customer.html");
         }
         response.setContentType("text/html; charset=UTF-8");
         PrintWriter out = response.getWriter();

@@ -1,9 +1,7 @@
 package dataAccess;
 
 import dataAccess.connectionutil.DBConnection;
-import dataAccess.entity.Customer;
 import dataAccess.entity.LegalCustomer;
-import exceptions.NoValidatedCustomer;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -12,7 +10,7 @@ import java.util.ArrayList;
  * Created by Dotin school 5 on 8/7/2016.
  */
 public class LegalCustomerCRUD extends CustomerCRUD {
-    Connection connection = DBConnection.getDBConnection();
+    static Connection connection = DBConnection.getDBConnection();
 
     public boolean validateCustomer(String economicID) throws SQLException {
         ResultSet resultSet = connection.createStatement().executeQuery("SELECT * FROM legal_customer WHERE economic_id=" + economicID);
@@ -48,12 +46,14 @@ public class LegalCustomerCRUD extends CustomerCRUD {
 
 
     }
-    public ArrayList searchCustomer (String customerNumber, String companyName , String registrationDate , String economicID) throws SQLException {
-        PreparedStatement preparedStatement = generatePrepareStatement( customerNumber, companyName, registrationDate, economicID);
+
+    public ArrayList searchCustomer(String customerNumber, String companyName, String registrationDate, String economicID) throws SQLException {
+        PreparedStatement preparedStatement = generatePrepareStatement(customerNumber, companyName, registrationDate, economicID);
         ResultSet resultSet = preparedStatement.executeQuery();
         ArrayList<LegalCustomer> legalCustomerResult = new ArrayList<LegalCustomer>();
         while (resultSet.next()) {
             LegalCustomer legalCustomer = new LegalCustomer();
+            legalCustomer.setId(resultSet.getInt("id"));
             legalCustomer.setCustomerNumber(resultSet.getString("customer_number"));
             legalCustomer.setCompanyName(resultSet.getString("company_name"));
             legalCustomer.setRegistrationDate(resultSet.getString("registration_date"));
@@ -62,12 +62,13 @@ public class LegalCustomerCRUD extends CustomerCRUD {
         }
         return legalCustomerResult;
     }
-    public  PreparedStatement generatePrepareStatement (String customerNumber ,String companyName , String registrationDate , String economicID) throws SQLException {
+
+    public PreparedStatement generatePrepareStatement(String customerNumber, String companyName, String registrationDate, String economicID) throws SQLException {
 
         StringBuilder stringBuilder = new StringBuilder();
 
-        if(customerNumber!="" | companyName!="" | registrationDate!="" | economicID!="") {
-            stringBuilder.append("SELECT * FROM legal_customer JOIN customer  WHERE");
+        if (customerNumber != "" | companyName != "" | registrationDate != "" | economicID != "") {
+            stringBuilder.append("SELECT * FROM (legal_customer JOIN customer ON customer.id = legal_customer.id) WHERE ");
             if (customerNumber != "") {
                 stringBuilder.append(" customer_number=" + customerNumber + " AND");
             }
@@ -80,13 +81,18 @@ public class LegalCustomerCRUD extends CustomerCRUD {
             if (economicID != "") {
                 stringBuilder.append(" economicID=" + economicID);
             }
-        }
-        else {
+        } else {
             stringBuilder.append("SELECT * FROM legal_customer JOIN customer WHERE customer.id = legal_customer.id");
         }
         PreparedStatement preparedStatement = connection.prepareStatement(stringBuilder.toString());
 
-        return preparedStatement ;
+        return preparedStatement;
     }
 
+    public static void deleteCustomer (int id) throws SQLException {
+
+        PreparedStatement preparedStatement = connection.prepareStatement("DELETE  FROM legal_customer WHERE id =?");
+        preparedStatement.setInt(1, id);
+        preparedStatement.executeUpdate();
+    }
 }

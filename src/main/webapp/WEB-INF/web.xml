@@ -16,6 +16,18 @@
     <servlet-name>SearchLegalCustomerServlet</servlet-name>
     <servlet-class>servlets.SearchLegalCustomerServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>SearchRealCustomerServlet</servlet-name>
+    <servlet-class>servlets.SearchRealCustomerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteRealCustomerServlet</servlet-name>
+    <servlet-class>servlets.DeleteRealCustomerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteLegalCustomerServlet</servlet-name>
+    <servlet-class>servlets.DeleteLegalCustomerServlet</servlet-class>
+  </servlet>
 
 
   <servlet-mapping>
@@ -30,6 +42,19 @@
     <servlet-name>SearchLegalCustomerServlet</servlet-name>
     <url-pattern>/SearchLegalCustomerServlet</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchRealCustomerServlet</servlet-name>
+    <url-pattern>/SearchRealCustomerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteRealCustomerServlet</servlet-name>
+    <url-pattern>/DeleteRealCustomerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteLegalCustomerServlet</servlet-name>
+    <url-pattern>/DeleteLegalCustomerServlet</url-pattern>
+  </servlet-mapping>
+
 
 
 </web-app>

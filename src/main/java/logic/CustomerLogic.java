@@ -1,6 +1,5 @@
 package logic;
 
-        import dataAccess.CustomerCRUD;
         import dataAccess.LegalCustomerCRUD;
         import dataAccess.RealCustomerCRUD;
         import dataAccess.connectionutil.DBConnection;
@@ -67,6 +66,14 @@ public class CustomerLogic {
         LegalCustomerCRUD legalCustomerCRUD = new LegalCustomerCRUD();
         return legalCustomerCRUD.searchCustomer(customerNumber, companyName, registrationDate, economicID);
 
+    }
+    public ArrayList<RealCustomer> searchCustomer(String customerNumber, String firstName, String lastName, String fatherName, String dateOfBirth, String internationalID) throws SQLException {
+        RealCustomerCRUD realCustomerCRUD = new RealCustomerCRUD();
+        return realCustomerCRUD.searchCustomer(customerNumber,firstName,lastName,fatherName,dateOfBirth , internationalID);
+
+    }
+    public void deleteCustomer (int id) throws SQLException {
+         LegalCustomerCRUD.deleteCustomer(id);
     }
 
 }
