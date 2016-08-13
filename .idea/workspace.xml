@@ -2,36 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f705195e-0c9f-4c45-8074-93bd8c1484b5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/dataAccess/LegalCustomerCRUD.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/dataAccess/RealCustomerCRUD.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/logic/CustomerLogic.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/servlets/CreateLegalCustomerServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/servlets/DeleteLegalCustomerServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/servlets/DeleteRealCustomerServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/servlets/SearchLegalCustomerServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/servlets/SearchRealCustomerServlet.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/dataAccess/LegalCustomerCRUD.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/dataAccess/LegalCustomerCRUD.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/dataAccess/RealCustomerCRUD.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/dataAccess/RealCustomerCRUD.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/logic/CustomerLogic.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/logic/CustomerLogic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/servlets/SearchLegalCustomerServlet.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/servlets/SearchLegalCustomerServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/servlets/SearchRealCustomerServlet.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/servlets/SearchRealCustomerServlet.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/servlets/ReadLegalCustomerServlet.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/servlets/ReadRealCustomerServlet.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/servlets/CreateLegalCustomerServlet.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/servlets/CreateLegalCustomerServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/servlets/DeleteLegalCustomerServlet.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/servlets/DeleteLegalCustomerServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/servlets/DeleteRealCustomerServlet.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/servlets/DeleteRealCustomerServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataAccess/LegalCustomerCRUD.java" afterPath="$PROJECT_DIR$/src/main/java/dataAccess/LegalCustomerCRUD.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataAccess/RealCustomerCRUD.java" afterPath="$PROJECT_DIR$/src/main/java/dataAccess/RealCustomerCRUD.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/logic/CustomerLogic.java" afterPath="$PROJECT_DIR$/src/main/java/logic/CustomerLogic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/output/OutputGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/output/OutputGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/CreateLegalCustomerServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/CreateLegalCustomerServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/CreateRealCustomerServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/CreateRealCustomerServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/DeleteLegalCustomerServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/DeleteLegalCustomerServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/DeleteRealCustomerServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/DeleteRealCustomerServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/SearchLegalCustomerServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/SearchLegalCustomerServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/SearchRealCustomerServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/SearchRealCustomerServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/search_real_customer.html" afterPath="$PROJECT_DIR$/src/main/webapp/search_real_customer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/css/style.css" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/search_legal_customer.html" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/search_legal_customer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/search_real_customer.html" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/search_real_customer.html" />
     </list>
     <ignored path="AccountManagement.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,7 +48,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DeleteLegalCustomerServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DeleteLegalCustomerServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/servlets/DeleteLegalCustomerServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
@@ -97,11 +74,31 @@
       <file leaf-file-name="DeleteRealCustomerServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/servlets/DeleteRealCustomerServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+            <state relative-caret-position="452">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UpdateLegalCustomerServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UpdateLegalCustomerServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UpdateRealCustomerServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UpdateRealCustomerServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -132,16 +129,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LegalCustomerLogic.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/logic/LegalCustomerLogic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LegalCustomerCRUD.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/LegalCustomerCRUD.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -156,16 +143,6 @@
                 <marker date="1471091330934" expanded="true" signature="1485:1580" placeholder="INSERT INTO legal_customer... " />
                 <marker date="1471091330934" expanded="true" signature="4328:4367" placeholder="DELETE FROM " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UpdateRealCustomerServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UpdateRealCustomerServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -267,9 +244,9 @@
         <option value="$PROJECT_DIR$/src/main/java/exceptions/NotExecutedDataBaseException.java" />
         <option value="$PROJECT_DIR$/src/main/java/dataAccess/LegalCustomerCRUD.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/CustomerLogic.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/DeleteRealCustomerServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/DeleteLegalCustomerServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/DeleteRealCustomerServlet.java" />
       </list>
     </option>
   </component>
@@ -1130,7 +1107,7 @@
       <workItem from="1470718835491" duration="2302000" />
       <workItem from="1471063824630" duration="261000" />
       <workItem from="1471064087656" duration="17000" />
-      <workItem from="1471064122083" duration="23944000" />
+      <workItem from="1471064122083" duration="26004000" />
     </task>
     <task id="LOCAL-00001" summary="commit:D">
       <created>1470210703012</created>
@@ -1181,11 +1158,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471077710247</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="delete added">
+      <created>1471092282986</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1471092282986</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101982000" />
+    <option name="totallyTimeSpent" value="104042000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1210,7 +1194,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0013908206" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2506964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07799443" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11142062" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1245,7 +1229,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit:D" />
     <MESSAGE value="legal search added" />
-    <option name="LAST_COMMIT_MESSAGE" value="legal search added" />
+    <MESSAGE value="delete added" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1299,13 +1284,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UpdateLegalCustomerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -1542,14 +1520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UpdateRealCustomerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/logic/LegalCustomerLogic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1616,24 +1586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/DeleteRealCustomerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/output/OutputGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1652,6 +1604,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="33" column="70" selection-start-line="33" selection-start-column="70" selection-end-line="33" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/DeleteRealCustomerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UpdateRealCustomerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UpdateLegalCustomerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
