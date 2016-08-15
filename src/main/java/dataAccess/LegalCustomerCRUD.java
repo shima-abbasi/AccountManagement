@@ -82,7 +82,7 @@ public class LegalCustomerCRUD extends CustomerCRUD {
                 stringBuilder.append(" economicID=" + economicID);
             }
         } else {
-            stringBuilder.append("SELECT * FROM legal_customer JOIN customer WHERE customer.id = legal_customer.id");
+            stringBuilder.append("SELECT * FROM legal_customer JOIN customer ON customer.id = legal_customer.id");
         }
         PreparedStatement preparedStatement = connection.prepareStatement(stringBuilder.toString());
 
@@ -93,6 +93,31 @@ public class LegalCustomerCRUD extends CustomerCRUD {
 
         PreparedStatement preparedStatement = connection.prepareStatement("DELETE  FROM legal_customer WHERE id =?");
         preparedStatement.setInt(1, id);
+        preparedStatement.executeUpdate();
+    }
+    public  static  LegalCustomer retrieveCustomer (int id) throws SQLException {
+        PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM legal_customer LEFT OUTER JOIN customer ON (legal_customer.id = customer.id) WHERE  customer.id =?");
+        preparedStatement.setInt(1, id);
+        ResultSet results = preparedStatement.executeQuery();
+        System.out.println("*");
+        LegalCustomer legalCustomer = new LegalCustomer();
+        if (results.next()) {
+            legalCustomer.setId(results.getInt("id"));
+            System.out.println("##");
+            legalCustomer.setCustomerNumber(results.getString("customer_number"));
+            System.out.println("##");
+            legalCustomer.setCompanyName(results.getString("company_name"));
+            legalCustomer.setEconomicID(results.getString("economic_id"));
+            legalCustomer.setRegistrationDate(results.getString("registration_date"));
+        }
+        return legalCustomer;
+    }
+    public static void updateCustomer (int id , String companyName, String registrationDate, String economicID) throws SQLException {
+        PreparedStatement preparedStatement = connection.prepareStatement("UPDATE legal_customer SET company_name = ? , economic_id =  ? ,  registration_date = ?  WHERE id=?");
+        preparedStatement.setString(1, companyName);
+        preparedStatement.setString(2, economicID);
+        preparedStatement.setString(3,registrationDate );
+        preparedStatement.setInt(4, id);
         preparedStatement.executeUpdate();
     }
 }

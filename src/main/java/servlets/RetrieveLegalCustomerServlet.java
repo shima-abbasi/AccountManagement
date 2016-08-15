@@ -1,5 +1,6 @@
 package servlets;
 
+import dataAccess.entity.LegalCustomer;
 import logic.CustomerLogic;
 import output.OutputGenerator;
 
@@ -12,23 +13,23 @@ import java.io.PrintWriter;
 import java.sql.SQLException;
 
 /**
- * Created by Dotin school 5 on 8/15/2016.
+ * Created by Dotin school 5 on 8/6/2016.
  */
-public class UpdateLegalCustomerServlet extends HttpServlet {
+public class RetrieveLegalCustomerServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         CustomerLogic customerLogic = new CustomerLogic();
+
         int id = Integer.parseInt(request.getParameter("id"));
-        String companyName = request.getParameter("companyName");
-        String registrationDate = request.getParameter("registrationDate");
-        String economicID = request.getParameter("economicID");
         String output="";
         try {
-            customerLogic.updateCustomer(id , companyName, registrationDate, economicID);
-            output = OutputGenerator.generateMessage("اطلاعات مشتری با موفقیت اصلاح شد.","search_legal_customer.html");
+            LegalCustomer legalCustomer = customerLogic.retrieveCustomer(id);
+            output = OutputGenerator.generateUpdatePage(legalCustomer);
+
         } catch (SQLException e) {
-            e.printStackTrace();
+            output = OutputGenerator.generateMessage("Problem in connection to the database", "search_legal_customer.html");
         }
+
         response.setContentType("text/html; charset=UTF-8");
         PrintWriter out = response.getWriter();
         out.println(output);

@@ -10,6 +10,8 @@ public class LegalCustomer extends Customer {
     private String registrationDate;
     private String economicID;
 
+
+
     public int getId() {
         return id;
     }

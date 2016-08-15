@@ -28,6 +28,14 @@
     <servlet-name>DeleteLegalCustomerServlet</servlet-name>
     <servlet-class>servlets.DeleteLegalCustomerServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>RetrieveLegalCustomerServlet</servlet-name>
+    <servlet-class>servlets.RetrieveLegalCustomerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateLegalCustomerServlet</servlet-name>
+    <servlet-class>servlets.UpdateLegalCustomerServlet</servlet-class>
+  </servlet>
 
 
   <servlet-mapping>
@@ -50,9 +58,18 @@
     <servlet-name>DeleteRealCustomerServlet</servlet-name>
     <url-pattern>/DeleteRealCustomerServlet</url-pattern>
   </servlet-mapping>
+
   <servlet-mapping>
     <servlet-name>DeleteLegalCustomerServlet</servlet-name>
     <url-pattern>/DeleteLegalCustomerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RetrieveLegalCustomerServlet</servlet-name>
+    <url-pattern>/RetrieveLegalCustomerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateLegalCustomerServlet</servlet-name>
+    <url-pattern>/UpdateLegalCustomerServlet</url-pattern>
   </servlet-mapping>
 
 
