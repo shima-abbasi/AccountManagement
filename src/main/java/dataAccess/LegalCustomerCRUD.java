@@ -91,9 +91,13 @@ public class LegalCustomerCRUD extends CustomerCRUD {
 
     public static void deleteCustomer (int id) throws SQLException {
 
-        PreparedStatement preparedStatement = connection.prepareStatement("DELETE  FROM legal_customer WHERE id =?");
-        preparedStatement.setInt(1, id);
-        preparedStatement.executeUpdate();
+        PreparedStatement preparedStatement1 = connection.prepareStatement("DELETE  FROM legal_customer WHERE id =?");
+        preparedStatement1.setInt(1, id);
+        preparedStatement1.executeUpdate();
+
+        PreparedStatement preparedStatement2 = connection.prepareStatement("DELETE  FROM customer WHERE id =?");
+        preparedStatement2.setInt(1, id);
+        preparedStatement2.executeUpdate();
     }
     public  static  LegalCustomer retrieveCustomer (int id) throws SQLException {
         PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM legal_customer LEFT OUTER JOIN customer ON (legal_customer.id = customer.id) WHERE  customer.id =?");
