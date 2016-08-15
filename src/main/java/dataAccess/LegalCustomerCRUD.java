@@ -107,9 +107,7 @@ public class LegalCustomerCRUD extends CustomerCRUD {
         LegalCustomer legalCustomer = new LegalCustomer();
         if (results.next()) {
             legalCustomer.setId(results.getInt("id"));
-            System.out.println("##");
             legalCustomer.setCustomerNumber(results.getString("customer_number"));
-            System.out.println("##");
             legalCustomer.setCompanyName(results.getString("company_name"));
             legalCustomer.setEconomicID(results.getString("economic_id"));
             legalCustomer.setRegistrationDate(results.getString("registration_date"));
