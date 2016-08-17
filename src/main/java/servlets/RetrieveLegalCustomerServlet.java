@@ -2,6 +2,7 @@ package servlets;
 
 import dataAccess.entity.LegalCustomer;
 import logic.CustomerLogic;
+import logic.LegalCustomerLogic;
 import output.OutputGenerator;
 
 import javax.servlet.ServletException;
@@ -18,12 +19,10 @@ import java.sql.SQLException;
 public class RetrieveLegalCustomerServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        CustomerLogic customerLogic = new CustomerLogic();
-
         int id = Integer.parseInt(request.getParameter("id"));
         String output="";
         try {
-            LegalCustomer legalCustomer = customerLogic.retrieveCustomer(id);
+            LegalCustomer legalCustomer = LegalCustomerLogic.retrieveCustomer(id);
             output = OutputGenerator.generateUpdatePage(legalCustomer);
 
         } catch (SQLException e) {

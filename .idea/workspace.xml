@@ -2,8 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f705195e-0c9f-4c45-8074-93bd8c1484b5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Readme.txt" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/exceptions/NoValidatedCustomerException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/exceptions/RequiredFieldException.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/exceptions/NoValidatedCustomer.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dataAccess/LegalCustomerCRUD.class" afterPath="$PROJECT_DIR$/target/classes/dataAccess/LegalCustomerCRUD.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dataAccess/connectionutil/DBConnection.class" afterPath="$PROJECT_DIR$/target/classes/dataAccess/connectionutil/DBConnection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/logic/CustomerLogic.class" afterPath="$PROJECT_DIR$/target/classes/logic/CustomerLogic.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/logic/LegalCustomerLogic.class" afterPath="$PROJECT_DIR$/target/classes/logic/LegalCustomerLogic.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/servlets/CreateLegalCustomerServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlets/CreateLegalCustomerServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/dataAccess/LegalCustomerCRUD.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/dataAccess/LegalCustomerCRUD.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/dataAccess/connectionutil/DBConnection.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/dataAccess/connectionutil/DBConnection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/logic/CustomerLogic.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/logic/CustomerLogic.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/logic/LegalCustomerLogic.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/logic/LegalCustomerLogic.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/servlets/CreateLegalCustomerServlet.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/servlets/CreateLegalCustomerServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataAccess/LegalCustomerCRUD.java" afterPath="$PROJECT_DIR$/src/main/java/dataAccess/LegalCustomerCRUD.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataAccess/RealCustomerCRUD.java" afterPath="$PROJECT_DIR$/src/main/java/dataAccess/RealCustomerCRUD.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataAccess/connectionutil/DBConnection.java" afterPath="$PROJECT_DIR$/src/main/java/dataAccess/connectionutil/DBConnection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/logic/CustomerLogic.java" afterPath="$PROJECT_DIR$/src/main/java/logic/CustomerLogic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/logic/LegalCustomerLogic.java" afterPath="$PROJECT_DIR$/src/main/java/logic/LegalCustomerLogic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/logic/RealCustomerLogic.java" afterPath="$PROJECT_DIR$/src/main/java/logic/RealCustomerLogic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/output/OutputGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/output/OutputGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/CreateLegalCustomerServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/CreateLegalCustomerServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/CreateRealCustomerServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/CreateRealCustomerServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/DeleteLegalCustomerServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/DeleteLegalCustomerServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/DeleteRealCustomerServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/DeleteRealCustomerServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/RetrieveLegalCustomerServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/RetrieveLegalCustomerServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/RetrieveRealCustomerServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/RetrieveRealCustomerServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/SearchLegalCustomerServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/SearchLegalCustomerServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/SearchRealCustomerServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/SearchRealCustomerServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/UpdateLegalCustomerServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/UpdateLegalCustomerServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/UpdateRealCustomerServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/UpdateRealCustomerServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/css/style.css" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/css/style.css" />
     </list>
@@ -48,11 +77,59 @@
       <file leaf-file-name="CustomerLogic.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/logic/CustomerLogic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+            <state relative-caret-position="515">
+              <caret line="84" column="30" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />
+              <folding>
+                <marker date="1471433271737" expanded="true" signature="2585:2621" placeholder="SELECT custo... customer" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LegalCustomerLogic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/logic/LegalCustomerLogic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+              <folding>
+                <marker date="1471433271524" expanded="true" signature="654:701" placeholder="SELECT * FRO... legal_customer" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RetrieveRealCustomerServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/RetrieveRealCustomerServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1471246588091" expanded="true" signature="2443:2479" placeholder="SELECT custo... customer" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RealCustomerLogic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/logic/RealCustomerLogic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1471433271473" expanded="true" signature="644:695" placeholder="SELECT * FRO... real_customer" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeleteRealCustomerServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/DeleteRealCustomerServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,100 +138,69 @@
       <file leaf-file-name="LegalCustomerCRUD.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/LegalCustomerCRUD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+            <state relative-caret-position="396">
+              <caret line="106" column="23" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2308#2323#0" expanded="true" />
-                <marker date="1471260450993" expanded="true" signature="479:526" placeholder="SELECT * FRO... legal_customer" />
-                <marker date="1471260450993" expanded="true" signature="1062:1110" placeholder="INSERT INTO customer... " />
-                <marker date="1471260450993" expanded="true" signature="1279:1302" placeholder="SELECT id FR... customer" />
-                <marker date="1471260450993" expanded="true" signature="1485:1580" placeholder="INSERT INTO legal_customer... " />
-                <marker date="1471260450993" expanded="true" signature="4326:4365" placeholder="DELETE FROM " />
-                <marker date="1471260450993" expanded="true" signature="4532:4565" placeholder="DELETE FROM " />
-                <marker date="1471260450993" expanded="true" signature="4818:4930" placeholder="SELECT * FRO... legal_customer" />
-                <marker date="1471260450993" expanded="true" signature="5791:5889" placeholder="UPDATE legal... " />
+                <element signature="e#2011#2026#0" expanded="true" />
+                <marker date="1471433271699" expanded="true" signature="758:806" placeholder="INSERT INTO customer... " />
+                <marker date="1471433271699" expanded="true" signature="975:998" placeholder="SELECT id FR... customer" />
+                <marker date="1471433271699" expanded="true" signature="1181:1276" placeholder="INSERT INTO legal_customer... " />
+                <marker date="1471433271699" expanded="true" signature="4052:4091" placeholder="DELETE FROM " />
+                <marker date="1471433271699" expanded="true" signature="4258:4291" placeholder="DELETE FROM " />
+                <marker date="1471433271699" expanded="true" signature="4544:4656" placeholder="SELECT * FRO... legal_customer" />
+                <marker date="1471433271699" expanded="true" signature="5484:5582" placeholder="UPDATE legal... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <file leaf-file-name="RetrieveLegalCustomerServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/RetrieveLegalCustomerServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            <state relative-caret-position="221">
+              <caret line="24" column="69" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="select_customer_type.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/select_customer_type.html">
+      <file leaf-file-name="RealCustomerCRUD.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/RealCustomerCRUD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-              <folding />
+            <state relative-caret-position="432">
+              <caret line="111" column="13" selection-start-line="111" selection-start-column="13" selection-end-line="111" selection-end-column="13" />
+              <folding>
+                <marker date="1471433271497" expanded="true" signature="897:945" placeholder="INSERT INTO customer... " />
+                <marker date="1471433271497" expanded="true" signature="1114:1137" placeholder="SELECT id FR... customer" />
+                <marker date="1471433271497" expanded="true" signature="1320:1443" placeholder="INSERT INTO real_customer... " />
+                <marker date="1471433271497" expanded="true" signature="4871:4981" placeholder="SELECT * FRO... real_customer" />
+                <marker date="1471433271497" expanded="true" signature="5974:6101" placeholder="UPDATE real_... " />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
+      <file leaf-file-name="UpdateLegalCustomerServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UpdateLegalCustomerServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
-              <folding />
+            <state relative-caret-position="379">
+              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreateRealCustomerServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CreateRealCustomerServlet.java">
+      <file leaf-file-name="UpdateRealCustomerServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UpdateRealCustomerServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="42" column="119" selection-start-line="42" selection-start-column="119" selection-end-line="42" selection-end-column="119" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/entity/Customer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LegalCustomer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/entity/LegalCustomer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RealCustomer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/entity/RealCustomer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateLegalCustomerServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CreateLegalCustomerServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
-              <folding />
+            <state relative-caret-position="379">
+              <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -181,10 +227,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/presentation/legal_customer_management.html" />
-        <option value="$PROJECT_DIR$/src/main/java/business/LegalCustomer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/business/RealCustomer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dataAccess/manage/RealCustomer.java" />
         <option value="$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.37/mysql-connector-java-5.1.37.jar!/com/mysql/jdbc/NonRegisteringDriver.class" />
         <option value="$PROJECT_DIR$/src/main/java/driver/DBConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/dataAccess/DBConnection.java" />
@@ -201,10 +243,7 @@
         <option value="$PROJECT_DIR$/src/main/presentation/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/ReadLegalCustomerServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/ReadRealCustomerServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/UpdateRealCustomerServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/dataAccess/CustomerCRUD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/RealCustomerLogic.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/LegalCustomerLogic.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/CreateRealCutomerServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/dataAccess/dbConnection/DBConnection.java" />
         <option value="github.com/shima-abbasi/AccountManagement1.git" />
@@ -212,26 +251,33 @@
         <option value="$PROJECT_DIR$/src/main/webapp/search_legal_customer.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/select_customer_type.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/search_real_customer.html" />
-        <option value="$PROJECT_DIR$/src/main/java/dataAccess/RealCustomerCRUD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/SearchRealCustomerServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/CreateLegalCustomerServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/CreateRealCustomerServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/SearchLegalCustomerServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/exceptions/NotExecutedDataBaseException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/DeleteLegalCustomerServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/DeleteRealCustomerServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/dataAccess/entity/LegalCustomer.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/UpdateRealCustomerChangesServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlets/UpdateLegalCustomerChangesServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/CustomerLogic.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/RetrieveLegalCustomerServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/UpdateLegalCustomerServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/output/OutputGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dataAccess/LegalCustomerCRUD.java" />
         <option value="$PROJECT_DIR$/src/main/java/dataAccess/entity/RealCustomer.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/dataAccess/connectionutil/DBConnection.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/java/exceptions/RequiredFieldException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/exceptions/NoValidatedCustomer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/CreateLegalCustomerServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/CreateRealCustomerServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/SearchLegalCustomerServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/SearchRealCustomerServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/UpdateLegalCustomerServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/output/OutputGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/UpdateRealCustomerServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/LegalCustomerLogic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/RealCustomerLogic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/DeleteLegalCustomerServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/DeleteRealCustomerServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/RetrieveLegalCustomerServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/RetrieveRealCustomerServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dataAccess/LegalCustomerCRUD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/CustomerLogic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dataAccess/RealCustomerCRUD.java" />
       </list>
     </option>
   </component>
@@ -477,10 +523,6 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="output" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -590,6 +632,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AccountManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AccountManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dataAccess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connectionutil" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -614,10 +686,6 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Dotin school 5\IdeaProjects\AccountManagement\src\main\java\servlets" />
-      <recent name="C:\Users\Dotin school 5\IdeaProjects\AccountManagement\src\main" />
-    </key>
     <key name="OPEN_URL_DIALOG">
       <recent name="https://github.com/shima-abbasi/AccountManagement1.git" />
     </key>
@@ -626,6 +694,10 @@
       <recent name="C:\Users\Dotin school 5\IdeaProjects\AccountManagement\lib" />
       <recent name="C:\Users\Dotin school 5\IdeaProjects\AccountManagement\src\main\java\driver" />
       <recent name="C:\Users\Dotin school 5\IdeaProjects\AccountManagement\src\main\java" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dotin school 5\IdeaProjects\AccountManagement\src\main\java\servlets" />
+      <recent name="C:\Users\Dotin school 5\IdeaProjects\AccountManagement\src\main" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Run">
@@ -1151,7 +1223,7 @@
       <workItem from="1471064087656" duration="17000" />
       <workItem from="1471064122083" duration="26349000" />
       <workItem from="1471237233970" duration="24215000" />
-      <workItem from="1471412518374" duration="3781000" />
+      <workItem from="1471412518374" duration="18548000" />
     </task>
     <task id="LOCAL-00001" summary="commit:D">
       <created>1470210703012</created>
@@ -1244,11 +1316,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471264316446</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update added">
+      <created>1471416571557</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1471416571557</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132383000" />
+    <option name="totallyTimeSpent" value="147150000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1273,7 +1352,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0013908206" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2506964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11281337" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.03064067" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1314,7 +1393,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/output/OutputGenerator.java</url>
+          <line>216</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -1328,21 +1415,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/util/UUID.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1804">
-          <caret line="69" column="19" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/presentation/servlet/CreateRealCutomerServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/main/presentation/servlet/CreateLegalCustomerServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/servlets/ReadRealCustomerServlet.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/javax/management/remote/rmi/RMIConnectionImpl.java">
@@ -1430,50 +1502,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/create_real_customer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="20" column="30" selection-start-line="9" selection-start-column="0" selection-end-line="42" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/RealCustomerLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/LegalCustomerLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/RealCustomerCRUD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="59" column="31" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2629#2643#0" expanded="false" />
-            <marker date="1471087750371" expanded="true" signature="554:605" placeholder="SELECT * FRO... real_customer" />
-            <marker date="1471087750371" expanded="true" signature="1246:1294" placeholder="INSERT INTO customer... " />
-            <marker date="1471087750371" expanded="true" signature="1463:1486" placeholder="SELECT id FR... customer" />
-            <marker date="1471087750371" expanded="true" signature="1669:1792" placeholder="INSERT INTO real_customer... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/exceptions/NotExecutedDataBaseException.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/SearchLegalCustomerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="37" column="130" selection-start-line="37" selection-start-column="130" selection-end-line="37" selection-end-column="130" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/search_real_customer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1490,31 +1519,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/SearchRealCustomerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="26" column="51" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/RetrieveRealCustomerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/RetrieveLegalCustomerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="25" column="61" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-162">
           <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/select_customer_type.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/create_real_customer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1527,88 +1559,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UpdateRealCustomerServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+        <state relative-caret-position="464">
+          <caret line="129" column="23" selection-start-line="129" selection-start-column="23" selection-end-line="129" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UpdateLegalCustomerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/output/OutputGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="249" column="97" selection-start-line="249" selection-start-column="97" selection-end-line="249" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/DeleteRealCustomerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/DeleteLegalCustomerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/CustomerCRUD.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/exceptions/NoValidatedCustomerException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <element signature="e#176#177#0" expanded="true" />
+            <element signature="e#199#200#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/connectionutil/DBConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CreateLegalCustomerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/CustomerLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1471246588091" expanded="true" signature="2443:2479" placeholder="SELECT custo... customer" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CreateRealCustomerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="42" column="119" selection-start-line="42" selection-start-column="119" selection-end-line="42" selection-end-column="119" />
+        <state relative-caret-position="136">
+          <caret line="10" column="123" selection-start-line="10" selection-start-column="123" selection-end-line="10" selection-end-column="123" />
           <folding />
         </state>
       </provider>
@@ -1637,46 +1610,204 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/LegalCustomerCRUD.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/exceptions/RequiredFieldException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        <state relative-caret-position="170">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2308#2323#0" expanded="true" />
-            <marker date="1471260450993" expanded="true" signature="479:526" placeholder="SELECT * FRO... legal_customer" />
-            <marker date="1471260450993" expanded="true" signature="1062:1110" placeholder="INSERT INTO customer... " />
-            <marker date="1471260450993" expanded="true" signature="1279:1302" placeholder="SELECT id FR... customer" />
-            <marker date="1471260450993" expanded="true" signature="1485:1580" placeholder="INSERT INTO legal_customer... " />
-            <marker date="1471260450993" expanded="true" signature="4326:4365" placeholder="DELETE FROM " />
-            <marker date="1471260450993" expanded="true" signature="4532:4565" placeholder="DELETE FROM " />
-            <marker date="1471260450993" expanded="true" signature="4818:4930" placeholder="SELECT * FRO... legal_customer" />
-            <marker date="1471260450993" expanded="true" signature="5791:5889" placeholder="UPDATE legal... " />
+            <element signature="e#164#165#0" expanded="true" />
+            <element signature="e#187#188#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/exceptions/NoValidatedCustomerException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        <state relative-caret-position="119">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding>
+            <element signature="e#176#177#0" expanded="true" />
+            <element signature="e#199#200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CreateLegalCustomerServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+        <state relative-caret-position="289">
+          <caret line="29" column="65" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/select_customer_type.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/SearchLegalCustomerServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        <state relative-caret-position="368">
+          <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/SearchRealCustomerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="38" column="64" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/output/OutputGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-288">
+          <caret line="145" column="25" selection-start-line="145" selection-start-column="25" selection-end-line="145" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#generateLegalCustomer#0;class#OutputGenerator#0" expanded="false" />
+            <element signature="method#generateRealCustomer#0;class#OutputGenerator#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/CreateRealCustomerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="30" column="16" selection-start-line="29" selection-start-column="0" selection-end-line="33" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/CustomerCRUD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/DeleteLegalCustomerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/DeleteRealCustomerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/RetrieveLegalCustomerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="24" column="69" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/LegalCustomerLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+          <folding>
+            <marker date="1471433271524" expanded="true" signature="654:701" placeholder="SELECT * FRO... legal_customer" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/RetrieveRealCustomerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/RealCustomerLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1471433271473" expanded="true" signature="644:695" placeholder="SELECT * FRO... real_customer" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UpdateLegalCustomerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/LegalCustomerCRUD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="106" column="23" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2011#2026#0" expanded="true" />
+            <marker date="1471433271699" expanded="true" signature="758:806" placeholder="INSERT INTO customer... " />
+            <marker date="1471433271699" expanded="true" signature="975:998" placeholder="SELECT id FR... customer" />
+            <marker date="1471433271699" expanded="true" signature="1181:1276" placeholder="INSERT INTO legal_customer... " />
+            <marker date="1471433271699" expanded="true" signature="4052:4091" placeholder="DELETE FROM " />
+            <marker date="1471433271699" expanded="true" signature="4258:4291" placeholder="DELETE FROM " />
+            <marker date="1471433271699" expanded="true" signature="4544:4656" placeholder="SELECT * FRO... legal_customer" />
+            <marker date="1471433271699" expanded="true" signature="5484:5582" placeholder="UPDATE legal... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/UpdateRealCustomerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/CustomerLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="84" column="30" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />
+          <folding>
+            <marker date="1471433271737" expanded="true" signature="2585:2621" placeholder="SELECT custo... customer" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/RealCustomerCRUD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="111" column="13" selection-start-line="111" selection-start-column="13" selection-end-line="111" selection-end-column="13" />
+          <folding>
+            <marker date="1471433271497" expanded="true" signature="897:945" placeholder="INSERT INTO customer... " />
+            <marker date="1471433271497" expanded="true" signature="1114:1137" placeholder="SELECT id FR... customer" />
+            <marker date="1471433271497" expanded="true" signature="1320:1443" placeholder="INSERT INTO real_customer... " />
+            <marker date="1471433271497" expanded="true" signature="4871:4981" placeholder="SELECT * FRO... real_customer" />
+            <marker date="1471433271497" expanded="true" signature="5974:6101" placeholder="UPDATE real_... " />
+          </folding>
         </state>
       </provider>
     </entry>

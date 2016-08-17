@@ -26,14 +26,13 @@ public class SearchLegalCustomerServlet extends HttpServlet {
 
         protected void doGet(HttpServletRequest request, HttpServletResponse response)
                 throws ServletException, IOException {
-            CustomerLogic customerLogic = new LegalCustomerLogic();
             String customerNumber = request.getParameter("customerNumber");
             String companyName = request.getParameter("companyName");
             String registrationDate = request.getParameter("registrationDate");
             String economicID = request.getParameter("economicID");
             String output="";
             try {
-                ArrayList<LegalCustomer> legalCustomerResult = customerLogic.searchCustomer(customerNumber, companyName, registrationDate, economicID);
+                ArrayList<LegalCustomer> legalCustomerResult = CustomerLogic.searchCustomer(customerNumber, companyName, registrationDate, economicID);
                 if(legalCustomerResult.size() == 0){
                     output = OutputGenerator.generateMessage("مشتری با اطلاعات وارد شده وجود ندارد." , "search_legal_customer.html");
                 }else {

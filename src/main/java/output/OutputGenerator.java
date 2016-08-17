@@ -261,6 +261,60 @@ public class OutputGenerator {
 
         return stringBuilder.toString();
     }
+
+    public static String generateUpdatePage(RealCustomer realCustomer) {
+
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("<!DOCTYPE html>");
+        stringBuilder.append("<html lang=fa>");
+        stringBuilder.append("<head>");
+        stringBuilder.append("    <meta charset=UTF-8>");
+        stringBuilder.append("    <link href=css/style.css rel=stylesheet>");
+        stringBuilder.append("    <title>اصلاح اطلاعات مشتری</title>");
+        stringBuilder.append("</head>");
+        stringBuilder.append("<body>");
+        stringBuilder.append("            <div class=box-in>");
+        stringBuilder.append("                <br>");
+        stringBuilder.append("                 <form action='UpdateLegalCustomerServlet' method='get'>");
+        stringBuilder.append("                <h1>اطلاعات مشتری حقوقی :</h1>");
+        stringBuilder.append("                <br>");
+        stringBuilder.append("<input type='hidden' name='id' value='" + realCustomer.getId() + "'>");
+        stringBuilder.append("                    <table>");
+        stringBuilder.append("                        <tr>");
+        stringBuilder.append("                            <td>شماره مشتری</td>");
+        stringBuilder.append("                            <td><input type='text' name='customerNumber' value='" + realCustomer.getCustomerNumber() + "' readonly ></td>");
+        stringBuilder.append("                        </tr>");
+        stringBuilder.append("                        <tr>");
+        stringBuilder.append("                            <td> نام  </td>");
+        stringBuilder.append("                            <td><input type='text' name='firstName' value='" + realCustomer.getFirstName() + "'></td>");
+        stringBuilder.append("                        </tr>");
+        stringBuilder.append("                            <td> نام خانوادگی  </td>");
+        stringBuilder.append("                            <td><input type='text' name='lastName' value='" + realCustomer.getLastName() + "'></td>");
+        stringBuilder.append("                        </tr>");
+        stringBuilder.append("                            <td> نام پدر  </td>");
+        stringBuilder.append("                            <td><input type='text' name='fatherName' value='" + realCustomer.getFatherName() + "'></td>");
+        stringBuilder.append("                        </tr>");
+        stringBuilder.append("                        <tr>");
+        stringBuilder.append("                            <td> تاریخ تولد</td>");
+        stringBuilder.append("                            <td><input type='text' name='dateOfBirth' value='" + realCustomer.getDateOfBirth() + "'></td>");
+        stringBuilder.append("                        </tr>");
+        stringBuilder.append("                        <tr>");
+        stringBuilder.append("                            <td>کد ملی</td>");
+        stringBuilder.append("                            <td><input type='text' name='internationalID' value='" + realCustomer.getInternationalID() + "'></td>");
+        stringBuilder.append("                        </tr>");
+        stringBuilder.append("                    </table>");
+        stringBuilder.append("                    <input type='submit' class='button' value='ذخیره تغییرات'>");
+        stringBuilder.append("                    </form>");
+        stringBuilder.append("    <form action=\"real_customer_management.html\">");
+        stringBuilder.append("         <button class=\"button\" type=\"submit\"> بازگشت به صفحه قبل</button>");
+        stringBuilder.append("    </form>");
+        stringBuilder.append("            </div>");
+        stringBuilder.append("</body>");
+        stringBuilder.append("</html>");
+
+        return stringBuilder.toString();
+    }
 }
+
 
 

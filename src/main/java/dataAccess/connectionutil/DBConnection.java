@@ -9,7 +9,6 @@ public class DBConnection {
     private static String username="root";
     private static String password="root";
     private static String url = "jdbc:mysql://localhost:3306/account?useUnicode=true&characterEncoding=UTF-8&useSSL=false";
-    private static String dbName="mysql_java_db2";
 
     private DBConnection() {
     }

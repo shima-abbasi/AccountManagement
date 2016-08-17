@@ -17,14 +17,13 @@ import java.sql.SQLException;
 public class UpdateLegalCustomerServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        CustomerLogic customerLogic = new CustomerLogic();
         int id = Integer.parseInt(request.getParameter("id"));
         String companyName = request.getParameter("companyName");
         String registrationDate = request.getParameter("registrationDate");
         String economicID = request.getParameter("economicID");
         String output="";
         try {
-            customerLogic.updateCustomer(id , companyName, registrationDate, economicID);
+            CustomerLogic.updateCustomer(id , companyName, registrationDate, economicID);
             output = OutputGenerator.generateMessage("اطلاعات مشتری با موفقیت اصلاح شد.","search_legal_customer.html");
         } catch (SQLException e) {
             e.printStackTrace();

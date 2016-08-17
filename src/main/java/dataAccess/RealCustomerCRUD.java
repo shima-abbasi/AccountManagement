@@ -3,7 +3,6 @@ package dataAccess;
 import dataAccess.connectionutil.DBConnection;
 import dataAccess.entity.LegalCustomer;
 import dataAccess.entity.RealCustomer;
-import exceptions.NoValidatedCustomer;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -12,17 +11,9 @@ import java.util.ArrayList;
  * Created by Dotin school 5 on 8/7/2016.
  */
 public class RealCustomerCRUD extends CustomerCRUD {
-    Connection connection = DBConnection.getDBConnection();
+    static Connection connection = DBConnection.getDBConnection();
 
-    public boolean validateCustomer(String internationalID) throws SQLException {
-        ResultSet resultSet = connection.createStatement().executeQuery("SELECT * FROM real_customer WHERE international_id=" + internationalID);
-        if (resultSet.next()) {
-            return false;
-        }
-        return true;
-    }
-
-    public void createRealCustomer(RealCustomer realCustomer) throws SQLException {
+    public static void createRealCustomer(RealCustomer realCustomer) throws SQLException {
         String customerNumber = realCustomer.getCustomerNumber();
         String firstName = realCustomer.getFirstName();
         String lastName = realCustomer.getLastName();
@@ -47,11 +38,11 @@ public class RealCustomerCRUD extends CustomerCRUD {
         preparedStatement2.setString(5, dateOfBirth);
         preparedStatement2.setString(6, internationalID);
         preparedStatement2.executeUpdate();
-        System.out.println("Real customer number created");
+        System.out.println("Real customer inserted");
 
     }
 
-    public ArrayList<RealCustomer> searchCustomer(String customerNumber, String firstName, String lastName, String fatherName, String dateOfBirth, String internationalID) throws SQLException {
+    public static ArrayList<RealCustomer> searchCustomer(String customerNumber, String firstName, String lastName, String fatherName, String dateOfBirth, String internationalID) throws SQLException {
         PreparedStatement preparedStatement = generatePreparedStatement(customerNumber, firstName, lastName, fatherName, dateOfBirth, internationalID);
         ArrayList<RealCustomer> realCustomerResult = new ArrayList<RealCustomer>();
         ResultSet resultset = preparedStatement.executeQuery();
@@ -69,32 +60,60 @@ public class RealCustomerCRUD extends CustomerCRUD {
         return realCustomerResult;
     }
 
-    public PreparedStatement generatePreparedStatement(String customerNumber, String firstName, String
+    public static PreparedStatement generatePreparedStatement(String customerNumber, String firstName, String
             lastName, String fatherName, String dateOfBirth, String internationalID) throws SQLException {
         StringBuilder stringBuilder = new StringBuilder();
         if (customerNumber != "" | firstName != "" | lastName != "" | fatherName != "" | dateOfBirth != "" | internationalID != "") {
-            stringBuilder.append("SELECT * FROM (real_customer JOIN customer ON customer.id = real_customer.id) WHERE ");
+            stringBuilder.append("SELECT * FROM (real_customer rc JOIN customer c ON customer.id = real_customer.id) WHERE ");
             if (customerNumber != "" && customerNumber != null) {
-                stringBuilder.append(" customer_number =" + customerNumber + " AND");
+                stringBuilder.append(" c.customer_number =" + customerNumber + " AND");
             }
             if (firstName != "") {
-                stringBuilder.append(" first_name =" + firstName + " AND");
+                stringBuilder.append(" rc.first_name =" + firstName + " AND");
             }
             if (lastName != "") {
-                stringBuilder.append(" last_name =" + lastName + " AND");
+                stringBuilder.append(" rc.last_name =" + lastName + " AND");
             }
             if (fatherName != "") {
-                stringBuilder.append(" father_name =" + fatherName + " AND");
+                stringBuilder.append(" rc.father_name =" + fatherName + " AND");
             }
             if (dateOfBirth != "") {
-                stringBuilder.append(" date_of_birth =" + dateOfBirth + " AND");
+                stringBuilder.append(" rc.date_of_birth =" + dateOfBirth + " AND");
             }
             if (internationalID != "") {
-                stringBuilder.append(" international_id =" + internationalID);
+                stringBuilder.append(" rc.international_id =" + internationalID);
             }
         } else
             stringBuilder.append("SELECT * FROM real_customer JOIN customer ON customer.id = real_customer.id");
         PreparedStatement preparedStatement = connection.prepareStatement(stringBuilder.toString());
         return preparedStatement;
+    }
+
+    public static RealCustomer retrieveCustomer(int id) throws SQLException {
+        PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM real_customer LEFT OUTER JOIN customer ON (real_customer.id = customer.id) WHERE  customer.id =?");
+        preparedStatement.setInt(1, id);
+        ResultSet results = preparedStatement.executeQuery();
+        RealCustomer realCustomer = new RealCustomer();
+        if (results.next()) {
+            realCustomer.setId(results.getInt("id"));
+            realCustomer.setCustomerNumber(results.getString("customer_number"));
+            realCustomer.setFirstName(results.getString("first_name"));
+            realCustomer.setLastName(results.getString("last_name"));
+            realCustomer.setFatherName(results.getString("father_name"));
+            realCustomer.setDateOfBirth(results.getString("date_of_birth"));
+            realCustomer.setInternationalID(results.getString("international_id"));
+        }
+        return realCustomer;
+    }
+
+    public static void updateCustomer(int id, String firstName, String lastName, String fatherName, String dateOfBirth, String internationalID) throws SQLException {
+        PreparedStatement preparedStatement = connection.prepareStatement("UPDATE real_customer SET first_name = ? , last_name =  ? ,  father_name = ? , date_of_birth =? , international_id=?  WHERE id=?");
+        preparedStatement.setString(1, firstName);
+        preparedStatement.setString(2, lastName);
+        preparedStatement.setString(3, fatherName);
+        preparedStatement.setString(4, dateOfBirth);
+        preparedStatement.setString(5, internationalID);
+        preparedStatement.setInt(6, id);
+        preparedStatement.executeUpdate();
     }
 }

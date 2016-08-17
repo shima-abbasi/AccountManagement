@@ -12,16 +12,7 @@ import java.util.ArrayList;
 public class LegalCustomerCRUD extends CustomerCRUD {
     static Connection connection = DBConnection.getDBConnection();
 
-    public boolean validateCustomer(String economicID) throws SQLException {
-        ResultSet resultSet = connection.createStatement().executeQuery("SELECT * FROM legal_customer WHERE economic_id=" + economicID);
-
-        if (resultSet.next()) {
-            return false;
-        }
-        return true;
-    }
-
-    public void createLegalCustomer(LegalCustomer legalCustomer) throws SQLException {
+    public static void createLegalCustomer(LegalCustomer legalCustomer) throws SQLException {
         String customerNumber = legalCustomer.getCustomerNumber();
         String companyName = legalCustomer.getCompanyName();
         String registrationDate = legalCustomer.getRegistrationDate();
@@ -47,7 +38,7 @@ public class LegalCustomerCRUD extends CustomerCRUD {
 
     }
 
-    public ArrayList searchCustomer(String customerNumber, String companyName, String registrationDate, String economicID) throws SQLException {
+    public static ArrayList searchCustomer(String customerNumber, String companyName, String registrationDate, String economicID) throws SQLException {
         PreparedStatement preparedStatement = generatePrepareStatement(customerNumber, companyName, registrationDate, economicID);
         ResultSet resultSet = preparedStatement.executeQuery();
         ArrayList<LegalCustomer> legalCustomerResult = new ArrayList<LegalCustomer>();
@@ -63,23 +54,23 @@ public class LegalCustomerCRUD extends CustomerCRUD {
         return legalCustomerResult;
     }
 
-    public PreparedStatement generatePrepareStatement(String customerNumber, String companyName, String registrationDate, String economicID) throws SQLException {
+    public static PreparedStatement generatePrepareStatement(String customerNumber, String companyName, String registrationDate, String economicID) throws SQLException {
 
         StringBuilder stringBuilder = new StringBuilder();
 
         if (customerNumber != "" | companyName != "" | registrationDate != "" | economicID != "") {
-            stringBuilder.append("SELECT * FROM (legal_customer JOIN customer ON customer.id = legal_customer.id) WHERE ");
+            stringBuilder.append("SELECT * FROM (legal_customer lc JOIN customer c ON customer.id = legal_customer.id) WHERE ");
             if (customerNumber != "") {
-                stringBuilder.append(" customer_number=" + customerNumber + " AND");
+                stringBuilder.append(" c.customer_number=" + customerNumber + " AND");
             }
             if (companyName != "") {
-                stringBuilder.append(" company_name=" + companyName + " AND");
+                stringBuilder.append(" lc.company_name=" + companyName + " AND");
             }
             if (registrationDate != "") {
-                stringBuilder.append(" registrationDate=" + registrationDate + " AND");
+                stringBuilder.append(" lc.registrationDate=" + registrationDate + " AND");
             }
             if (economicID != "") {
-                stringBuilder.append(" economicID=" + economicID);
+                stringBuilder.append(" lc.economicID=" + economicID);
             }
         } else {
             stringBuilder.append("SELECT * FROM legal_customer JOIN customer ON customer.id = legal_customer.id");
@@ -103,7 +94,6 @@ public class LegalCustomerCRUD extends CustomerCRUD {
         PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM legal_customer LEFT OUTER JOIN customer ON (legal_customer.id = customer.id) WHERE  customer.id =?");
         preparedStatement.setInt(1, id);
         ResultSet results = preparedStatement.executeQuery();
-        System.out.println("*");
         LegalCustomer legalCustomer = new LegalCustomer();
         if (results.next()) {
             legalCustomer.setId(results.getInt("id"));
@@ -122,4 +112,5 @@ public class LegalCustomerCRUD extends CustomerCRUD {
         preparedStatement.setInt(4, id);
         preparedStatement.executeUpdate();
     }
+
 }

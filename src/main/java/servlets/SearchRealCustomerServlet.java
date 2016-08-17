@@ -24,7 +24,6 @@ public class SearchRealCustomerServlet extends HttpServlet {
 
         protected void doGet(HttpServletRequest request, HttpServletResponse response)
                 throws ServletException, IOException {
-            CustomerLogic customerLogic = new CustomerLogic();
             String customerNumber = request.getParameter("customer_number");
             String firstName = request.getParameter("firstName");
             String lastName = request.getParameter("lastName");
@@ -33,7 +32,7 @@ public class SearchRealCustomerServlet extends HttpServlet {
             String internationalID = request.getParameter("internationalID");
             String output="";
             try {
-                ArrayList<RealCustomer> realCustomerResult = customerLogic.searchCustomer(customerNumber,firstName,lastName,fatherName,dateOfBirth , internationalID);
+                ArrayList<RealCustomer> realCustomerResult = CustomerLogic.searchCustomer(customerNumber,firstName,lastName,fatherName,dateOfBirth , internationalID);
                 if(realCustomerResult.size() == 0){
                     output = OutputGenerator.generateMessage("مشتری با اطلاعات وارد شده وجود ندارد."  , "search_real_customer.html");
                 }else {

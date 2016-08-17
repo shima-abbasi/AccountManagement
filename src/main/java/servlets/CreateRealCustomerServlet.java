@@ -1,7 +1,8 @@
 package servlets;
 
 import dataAccess.entity.RealCustomer;
-import exceptions.NoValidatedCustomer;
+import exceptions.NoValidatedCustomerException;
+import exceptions.RequiredFieldException;
 import logic.CustomerLogic;
 import output.OutputGenerator;
 
@@ -26,7 +27,6 @@ public class CreateRealCustomerServlet extends HttpServlet {
     protected void doGet(HttpServletRequest theRequest, HttpServletResponse response)
             throws ServletException, IOException {
         theRequest.setCharacterEncoding("UTF-8");
-        CustomerLogic customerLogic = new CustomerLogic();
         String firstName = theRequest.getParameter("firstName");
         String lastName = theRequest.getParameter("lastName");
         String fatherName = theRequest.getParameter("fatherName");
@@ -35,12 +35,14 @@ public class CreateRealCustomerServlet extends HttpServlet {
         String output = "";
 
         try {
-            RealCustomer realCustomer =customerLogic.setCustomerInfo(firstName, lastName, fatherName, dateOfBirth, internationalID);
+            RealCustomer realCustomer =CustomerLogic.setCustomerInfo(firstName, lastName, fatherName, dateOfBirth, internationalID);
             output = OutputGenerator.generateRealCustomer(realCustomer);
         } catch (SQLException e) {
             e.printStackTrace();
-        } catch (NoValidatedCustomer noValidatedCustomer) {
-            output = OutputGenerator.generateMessage("مشتری مورد نظر مورد قبول نمیباشد" , "search_real_customer.html");
+        } catch (NoValidatedCustomerException noValidatedCustomer) {
+            output = OutputGenerator.generateMessage("مشتری با کد ملی وارد شده در سیستم موجود میباشد" , "create_real_customer.html");
+        } catch (RequiredFieldException e) {
+            output = OutputGenerator.generateMessage("لطفا اطلاعات ضروری را تکمیل کنید","create_real_customer.html");
         }
         response.setContentType("text/html; charset=UTF-8");
         PrintWriter out = response.getWriter();
