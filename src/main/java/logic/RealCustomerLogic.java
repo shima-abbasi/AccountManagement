@@ -18,7 +18,7 @@ public class RealCustomerLogic extends CustomerLogic{
 
     public static boolean validateUniqueCustomer(String internationalID) throws SQLException {
         ResultSet resultSet = connection.createStatement().executeQuery("SELECT * FROM real_customer WHERE international_id=" + internationalID);
-        if (resultSet.next()) {
+        if (!resultSet.next()) {
             return false;
         }
         return true;

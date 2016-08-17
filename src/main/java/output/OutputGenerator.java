@@ -86,7 +86,7 @@ public class OutputGenerator {
         stringBuilder.append("      </tr>");
         stringBuilder.append("      <tr>");
         stringBuilder.append("            <td>شماره مشتری</td>");
-        stringBuilder.append("            <td>" + realCustomer.getInternationalID() + "</td>");
+        stringBuilder.append("            <td>" + realCustomer.getCustomerNumber() + "</td>");
         stringBuilder.append("       </tr>");
         stringBuilder.append("</table>");
         stringBuilder.append("    <form action=\"real_customer_management.html\">");
