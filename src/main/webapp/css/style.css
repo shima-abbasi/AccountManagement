@@ -26,8 +26,8 @@ body {
     height: 20%;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 110px 50px 50px 350px;
-    font-family: "B Nazanin";
+    margin: 110px 350px 50px 350px;
+    font-family: "B Nasim";
 
 
 }
@@ -64,7 +64,7 @@ body {
     text-align: center;
     cursor: pointer;
     outline: none;
-    color: #fff;
+    color: black;
     background-color:gold;
     border: none;
     border-radius: 15px;
