@@ -1,16 +1,16 @@
 package logic;
 
-import dataAccess.LegalCustomerCRUD;
-import dataAccess.RealCustomerCRUD;
-import dataAccess.connectionutil.DBConnection;
-import dataAccess.entity.LegalCustomer;
-import dataAccess.entity.RealCustomer;
-import exceptions.NoValidatedCustomerException;
-import exceptions.RequiredFieldException;
+        import dataAccess.LegalCustomerCRUD;
+        import dataAccess.RealCustomerCRUD;
+        import dataAccess.connectionutil.DBConnection;
+        import dataAccess.entity.LegalCustomer;
+        import dataAccess.entity.RealCustomer;
+        import exceptions.NoValidatedCustomerException;
+        import exceptions.RequiredFieldException;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
+        import java.sql.ResultSet;
+        import java.sql.SQLException;
+        import java.util.ArrayList;
 
 /**
  * Created by Dotin school 5 on 8/7/2016.
@@ -78,10 +78,17 @@ public class CustomerLogic {
 
     }
 
-    public static void updateCustomer(int id, String companyName, String registrationDate, String economicID) throws SQLException {
-        LegalCustomerCRUD.updateCustomer(id, companyName, registrationDate, economicID);
+    public static void updateCustomer(int id, String companyName, String registrationDate, String economicID) throws SQLException, RequiredFieldException {
+        if (!LegalCustomerLogic.checkField(companyName, registrationDate, economicID))
+            throw new RequiredFieldException();
+        else
+            LegalCustomerCRUD.updateCustomer(id, companyName, registrationDate, economicID);
     }
-    public static void updateCustomer(int id , String firstName, String lastName, String fatherName, String dateOfBirth, String internationalID) throws SQLException {
-        RealCustomerCRUD.updateCustomer(id ,firstName , lastName , fatherName , dateOfBirth , internationalID);
+
+    public static void updateCustomer(int id, String firstName, String lastName, String fatherName, String dateOfBirth, String internationalID) throws SQLException, RequiredFieldException {
+        if (!RealCustomerLogic.checkField(firstName, lastName, fatherName, dateOfBirth, internationalID))
+            throw new RequiredFieldException();
+        else
+            RealCustomerCRUD.updateCustomer(id, firstName, lastName, fatherName, dateOfBirth, internationalID);
     }
 }

@@ -1,5 +1,6 @@
 package servlets;
 
+import exceptions.RequiredFieldException;
 import logic.CustomerLogic;
 import output.OutputGenerator;
 
@@ -29,6 +30,8 @@ public class UpdateRealCustomerServlet extends HttpServlet {
             output = OutputGenerator.generateMessage("اطلاعات مشتری با موفقیت اصلاح شد.","search_legal_customer.html");
         } catch (SQLException e) {
             e.printStackTrace();
+        } catch (RequiredFieldException e) {
+            output = OutputGenerator.generateMessage("لطفا اطلاعات ضروری را تکمیل کنید","search_real_customer.html");
         }
         theResponse.setContentType("text/html; charset=UTF-8");
         PrintWriter out = theResponse.getWriter();
