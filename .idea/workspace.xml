@@ -5,17 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/logic/RealCustomerLogic.class" afterPath="$PROJECT_DIR$/target/classes/logic/RealCustomerLogic.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/logic/RealCustomerLogic.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/logic/RealCustomerLogic.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataAccess/LegalCustomerCRUD.java" afterPath="$PROJECT_DIR$/src/main/java/dataAccess/LegalCustomerCRUD.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dataAccess/RealCustomerCRUD.java" afterPath="$PROJECT_DIR$/src/main/java/dataAccess/RealCustomerCRUD.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/logic/RealCustomerLogic.java" afterPath="$PROJECT_DIR$/src/main/java/logic/RealCustomerLogic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/output/OutputGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/output/OutputGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/RetrieveLegalCustomerServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/RetrieveLegalCustomerServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/RetrieveRealCustomerServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/RetrieveRealCustomerServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/SearchLegalCustomerServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/SearchLegalCustomerServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/SearchRealCustomerServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/SearchRealCustomerServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/UpdateLegalCustomerServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/UpdateLegalCustomerServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/UpdateRealCustomerServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/UpdateRealCustomerServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
     </list>
     <ignored path="AccountManagement.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1209,7 +1198,7 @@
       <workItem from="1471064122083" duration="26349000" />
       <workItem from="1471237233970" duration="24215000" />
       <workItem from="1471412518374" duration="22470000" />
-      <workItem from="1471674990646" duration="14301000" />
+      <workItem from="1471674990646" duration="14313000" />
     </task>
     <task id="LOCAL-00001" summary="commit:D">
       <created>1470210703012</created>
@@ -1330,11 +1319,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471438788660</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="bug fixes">
+      <created>1471696369960</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1471696369960</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165373000" />
+    <option name="totallyTimeSpent" value="165385000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
