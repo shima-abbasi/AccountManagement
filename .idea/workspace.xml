@@ -2,9 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f705195e-0c9f-4c45-8074-93bd8c1484b5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/logic/RealCustomerLogic.class" afterPath="$PROJECT_DIR$/target/classes/logic/RealCustomerLogic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/logic/RealCustomerLogic.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/logic/RealCustomerLogic.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/dataAccess/LegalCustomerCRUD.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/dataAccess/RealCustomerCRUD.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/logic/RealCustomerLogic.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/servlets/SearchLegalCustomerServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlets/SearchLegalCustomerServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/servlets/SearchRealCustomerServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlets/SearchRealCustomerServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/servlets/UpdateLegalCustomerServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlets/UpdateLegalCustomerServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/servlets/UpdateRealCustomerServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlets/UpdateRealCustomerServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/dataAccess/LegalCustomerCRUD.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/dataAccess/LegalCustomerCRUD.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/dataAccess/RealCustomerCRUD.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/dataAccess/RealCustomerCRUD.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/servlets/SearchLegalCustomerServlet.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/servlets/SearchLegalCustomerServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/servlets/SearchRealCustomerServlet.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/servlets/SearchRealCustomerServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/servlets/UpdateLegalCustomerServlet.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/servlets/UpdateLegalCustomerServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/servlets/UpdateRealCustomerServlet.class" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/classes/servlets/UpdateRealCustomerServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/webapp-1.0-SNAPSHOT/WEB-INF/web.xml" />
     </list>
     <ignored path="AccountManagement.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -113,11 +125,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LegalCustomerCRUD.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LegalCustomerCRUD.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/LegalCustomerCRUD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+            <state relative-caret-position="524">
+              <caret line="127" column="5" selection-start-line="127" selection-start-column="5" selection-end-line="127" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2011#2026#0" expanded="true" />
@@ -142,11 +154,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RealCustomerLogic.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RealCustomerLogic.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/logic/RealCustomerLogic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+            <state relative-caret-position="269">
+              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1471696362689" expanded="true" signature="644:695" placeholder="SELECT * FRO... real_customer" />
@@ -1198,7 +1210,7 @@
       <workItem from="1471064122083" duration="26349000" />
       <workItem from="1471237233970" duration="24215000" />
       <workItem from="1471412518374" duration="22470000" />
-      <workItem from="1471674990646" duration="14313000" />
+      <workItem from="1471674990646" duration="14681000" />
     </task>
     <task id="LOCAL-00001" summary="commit:D">
       <created>1470210703012</created>
@@ -1326,11 +1338,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471696369960</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="bug fixes">
+      <created>1471696378051</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1471696378051</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165385000" />
+    <option name="totallyTimeSpent" value="165753000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1852,27 +1871,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/RealCustomerLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1471696362689" expanded="true" signature="644:695" placeholder="SELECT * FRO... real_customer" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dataAccess/LegalCustomerCRUD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+        <state relative-caret-position="524">
+          <caret line="127" column="5" selection-start-line="127" selection-start-column="5" selection-end-line="127" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2011#2026#0" expanded="true" />
             <marker date="1471696362658" expanded="true" signature="758:806" placeholder="INSERT INTO customer... " />
             <marker date="1471696362658" expanded="true" signature="975:998" placeholder="SELECT id FR... customer" />
             <marker date="1471696362658" expanded="true" signature="1181:1276" placeholder="INSERT INTO legal_customer... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/RealCustomerLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1471696362689" expanded="true" signature="644:695" placeholder="SELECT * FRO... real_customer" />
           </folding>
         </state>
       </provider>

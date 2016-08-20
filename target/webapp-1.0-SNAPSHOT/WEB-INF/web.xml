@@ -36,6 +36,15 @@
     <servlet-name>UpdateLegalCustomerServlet</servlet-name>
     <servlet-class>servlets.UpdateLegalCustomerServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>RetrieveRealCustomerServlet</servlet-name>
+    <servlet-class>servlets.RetrieveRealCustomerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateRealCustomerServlet</servlet-name>
+    <servlet-class>servlets.UpdateRealCustomerServlet</servlet-class>
+  </servlet>
+
 
 
   <servlet-mapping>
@@ -70,6 +79,14 @@
   <servlet-mapping>
     <servlet-name>UpdateLegalCustomerServlet</servlet-name>
     <url-pattern>/UpdateLegalCustomerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RetrieveRealCustomerServlet</servlet-name>
+    <url-pattern>/RetrieveRealCustomerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateRealCustomerServlet</servlet-name>
+    <url-pattern>/UpdateRealCustomerServlet</url-pattern>
   </servlet-mapping>
 
 
