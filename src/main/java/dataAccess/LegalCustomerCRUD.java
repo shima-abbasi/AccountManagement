@@ -59,18 +59,28 @@ public class LegalCustomerCRUD extends CustomerCRUD {
         StringBuilder stringBuilder = new StringBuilder();
 
         if (customerNumber != "" | companyName != "" | registrationDate != "" | economicID != "") {
-            stringBuilder.append("SELECT * FROM (legal_customer lc JOIN customer c ON customer.id = legal_customer.id) WHERE ");
+            stringBuilder.append("SELECT * FROM account.legal_customer lc join account.customer c on c.id = lc.id WHERE");
+            int count = 0;
             if (customerNumber != "") {
-                stringBuilder.append(" c.customer_number=" + customerNumber + " AND");
+                stringBuilder.append(" c.customer_number='" + customerNumber+"'");
+                count++;
             }
             if (companyName != "") {
-                stringBuilder.append(" lc.company_name=" + companyName + " AND");
+                if (count == 1)
+                    stringBuilder.append(" AND lc.company_name='" + companyName+"'");
+                else stringBuilder.append(" lc.company_name='" + companyName+"'");
+                count++;
             }
             if (registrationDate != "") {
-                stringBuilder.append(" lc.registrationDate=" + registrationDate + " AND");
+                if (count == 2)
+                    stringBuilder.append(" AND lc.registration_date='" + registrationDate+"'");
+                else stringBuilder.append(" lc.registration_date='" + registrationDate+"'");
+                count++;
             }
             if (economicID != "") {
-                stringBuilder.append(" lc.economicID=" + economicID);
+                if (count == 3)
+                    stringBuilder.append(" AND lc.economic_id='" + economicID+"'");
+                else stringBuilder.append(" lc.economic_id='" + economicID+"'");
             }
         } else {
             stringBuilder.append("SELECT * FROM legal_customer JOIN customer ON customer.id = legal_customer.id");
@@ -80,17 +90,7 @@ public class LegalCustomerCRUD extends CustomerCRUD {
         return preparedStatement;
     }
 
-    public static void deleteCustomer (int id) throws SQLException {
-
-        PreparedStatement preparedStatement1 = connection.prepareStatement("DELETE  FROM legal_customer WHERE id =?");
-        preparedStatement1.setInt(1, id);
-        preparedStatement1.executeUpdate();
-
-        PreparedStatement preparedStatement2 = connection.prepareStatement("DELETE  FROM customer WHERE id =?");
-        preparedStatement2.setInt(1, id);
-        preparedStatement2.executeUpdate();
-    }
-    public  static  LegalCustomer retrieveCustomer (int id) throws SQLException {
+    public static LegalCustomer retrieveCustomer(int id) throws SQLException {
         PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM legal_customer LEFT OUTER JOIN customer ON (legal_customer.id = customer.id) WHERE  customer.id =?");
         preparedStatement.setInt(1, id);
         ResultSet results = preparedStatement.executeQuery();
@@ -104,13 +104,26 @@ public class LegalCustomerCRUD extends CustomerCRUD {
         }
         return legalCustomer;
     }
-    public static void updateCustomer (int id , String companyName, String registrationDate, String economicID) throws SQLException {
+
+    public static void updateCustomer(int id, String companyName, String registrationDate, String
+            economicID) throws SQLException {
         PreparedStatement preparedStatement = connection.prepareStatement("UPDATE legal_customer SET company_name = ? , economic_id =  ? ,  registration_date = ?  WHERE id=?");
         preparedStatement.setString(1, companyName);
         preparedStatement.setString(2, economicID);
-        preparedStatement.setString(3,registrationDate );
+        preparedStatement.setString(3, registrationDate);
         preparedStatement.setInt(4, id);
         preparedStatement.executeUpdate();
     }
 
+
+    public static void deleteCustomer(int id) throws SQLException {
+
+        PreparedStatement preparedStatement1 = connection.prepareStatement("DELETE  FROM legal_customer WHERE id =?");
+        preparedStatement1.setInt(1, id);
+        preparedStatement1.executeUpdate();
+
+        PreparedStatement preparedStatement2 = connection.prepareStatement("DELETE  FROM customer WHERE id =?");
+        preparedStatement2.setInt(1, id);
+        preparedStatement2.executeUpdate();
+    }
 }

@@ -16,25 +16,26 @@ import java.sql.SQLException;
  * Created by Dotin school 5 on 8/15/2016.
  */
 public class UpdateRealCustomerServlet extends HttpServlet {
-    protected void doGet(HttpServletRequest theRequest, HttpServletResponse theResponse)
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        int id = Integer.parseInt(theRequest.getParameter("id"));
-        String firstName = theRequest.getParameter("firstName");
-        String lastName = theRequest.getParameter("lastName");
-        String fatherName = theRequest.getParameter("fatherName");
-        String dateOfBirth = theRequest.getParameter("dateOfBirth");
-        String internationalID = theRequest.getParameter("internationalID");
+        request.setCharacterEncoding("UTF-8");
+        int id = Integer.parseInt(request.getParameter("id"));
+        String firstName = request.getParameter("firstName");
+        String lastName = request.getParameter("lastName");
+        String fatherName = request.getParameter("fatherName");
+        String dateOfBirth = request.getParameter("dateOfBirth");
+        String internationalID = request.getParameter("internationalID");
         String output="";
         try {
             CustomerLogic.updateCustomer(id ,firstName, lastName, fatherName , dateOfBirth , internationalID);
-            output = OutputGenerator.generateMessage("اطلاعات مشتری با موفقیت اصلاح شد.","search_legal_customer.html");
+            output = OutputGenerator.generateMessage("اطلاعات مشتری با موفقیت اصلاح شد.","search_real_customer.html");
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (RequiredFieldException e) {
             output = OutputGenerator.generateMessage("لطفا اطلاعات ضروری را تکمیل کنید","search_real_customer.html");
         }
-        theResponse.setContentType("text/html; charset=UTF-8");
-        PrintWriter out = theResponse.getWriter();
+        response.setContentType("text/html; charset=UTF-8");
+        PrintWriter out = response.getWriter();
         out.println(output);
 
     }

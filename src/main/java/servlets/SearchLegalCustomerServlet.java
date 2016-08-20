@@ -26,6 +26,7 @@ public class SearchLegalCustomerServlet extends HttpServlet {
 
         protected void doGet(HttpServletRequest request, HttpServletResponse response)
                 throws ServletException, IOException {
+            request.setCharacterEncoding("UTF-8");
             String customerNumber = request.getParameter("customerNumber");
             String companyName = request.getParameter("companyName");
             String registrationDate = request.getParameter("registrationDate");

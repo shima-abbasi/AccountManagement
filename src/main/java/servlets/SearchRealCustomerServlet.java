@@ -24,7 +24,8 @@ public class SearchRealCustomerServlet extends HttpServlet {
 
         protected void doGet(HttpServletRequest request, HttpServletResponse response)
                 throws ServletException, IOException {
-            String customerNumber = request.getParameter("customer_number");
+            request.setCharacterEncoding("UTF-8");
+            String customerNumber = request.getParameter("customerNumber");
             String firstName = request.getParameter("firstName");
             String lastName = request.getParameter("lastName");
             String fatherName = request.getParameter("fatherName");

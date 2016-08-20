@@ -44,8 +44,8 @@ public class RealCustomerCRUD extends CustomerCRUD {
 
     public static ArrayList<RealCustomer> searchCustomer(String customerNumber, String firstName, String lastName, String fatherName, String dateOfBirth, String internationalID) throws SQLException {
         PreparedStatement preparedStatement = generatePreparedStatement(customerNumber, firstName, lastName, fatherName, dateOfBirth, internationalID);
-        ArrayList<RealCustomer> realCustomerResult = new ArrayList<RealCustomer>();
         ResultSet resultset = preparedStatement.executeQuery();
+        ArrayList<RealCustomer> realCustomerResult = new ArrayList<RealCustomer>();
         while (resultset.next()) {
             RealCustomer realCustomer = new RealCustomer();
             realCustomer.setId(resultset.getInt("id"));
@@ -63,34 +63,52 @@ public class RealCustomerCRUD extends CustomerCRUD {
     public static PreparedStatement generatePreparedStatement(String customerNumber, String firstName, String
             lastName, String fatherName, String dateOfBirth, String internationalID) throws SQLException {
         StringBuilder stringBuilder = new StringBuilder();
-        if (customerNumber != "" | firstName != "" | lastName != "" | fatherName != "" | dateOfBirth != "" | internationalID != "") {
-            stringBuilder.append("SELECT * FROM (real_customer rc JOIN customer c ON customer.id = real_customer.id) WHERE ");
-            if (customerNumber != "" && customerNumber != null) {
-                stringBuilder.append(" c.customer_number =" + customerNumber + " AND");
+        if (customerNumber!=""| firstName != "" | lastName != "" | fatherName != "" | dateOfBirth != "" | internationalID != "") {
+            stringBuilder.append("SELECT * FROM account.real_customer rc JOIN account.customer c ON c.id = rc.id WHERE");
+            int count = 0;
+            if (customerNumber != "") {
+                stringBuilder.append(" c.customer_number ='" + customerNumber + "'");
+                count++;
             }
             if (firstName != "") {
-                stringBuilder.append(" rc.first_name =" + firstName + " AND");
+                if (count == 1)
+                    stringBuilder.append(" AND rc.first_name ='" + firstName + "'");
+                else stringBuilder.append(" rc.first_name ='" + firstName + "'");
+                count++;
             }
             if (lastName != "") {
-                stringBuilder.append(" rc.last_name =" + lastName + " AND");
+                if (count == 2)
+                    stringBuilder.append(" AND rc.last_name ='" + lastName + "'");
+                else stringBuilder.append(" rc.last_name ='" + lastName + "'");
+                count++;
             }
             if (fatherName != "") {
-                stringBuilder.append(" rc.father_name =" + fatherName + " AND");
+                if (count == 3)
+                    stringBuilder.append(" AND rc.father_name ='" + fatherName + "'");
+                else stringBuilder.append(" rc.father_name ='" + fatherName + "'");
+                count++;
             }
             if (dateOfBirth != "") {
-                stringBuilder.append(" rc.date_of_birth =" + dateOfBirth + " AND");
+                if (count == 4)
+                    stringBuilder.append(" AND rc.date_of_birth ='" + dateOfBirth + "'");
+                else stringBuilder.append(" rc.date_of_birth ='" + dateOfBirth + "'");
+
+                count++;
             }
             if (internationalID != "") {
-                stringBuilder.append(" rc.international_id =" + internationalID);
+                if (count == 5)
+                    stringBuilder.append("AND rc.international_id ='" + internationalID + "'");
+                else stringBuilder.append(" rc.international_id ='" + internationalID + "'");
+
             }
         } else
-            stringBuilder.append("SELECT * FROM real_customer JOIN customer ON customer.id = real_customer.id");
+            stringBuilder.append("SELECT * FROM account.real_customer rc JOIN account.customer c ON c.id = rc.id");
         PreparedStatement preparedStatement = connection.prepareStatement(stringBuilder.toString());
         return preparedStatement;
     }
 
     public static RealCustomer retrieveCustomer(int id) throws SQLException {
-        PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM real_customer LEFT OUTER JOIN customer ON (real_customer.id = customer.id) WHERE  customer.id =?");
+        PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM account.real_customer rc JOIN account.customer c ON rc.id = c.id WHERE  c.id =?");
         preparedStatement.setInt(1, id);
         ResultSet results = preparedStatement.executeQuery();
         RealCustomer realCustomer = new RealCustomer();
@@ -115,5 +133,16 @@ public class RealCustomerCRUD extends CustomerCRUD {
         preparedStatement.setString(5, internationalID);
         preparedStatement.setInt(6, id);
         preparedStatement.executeUpdate();
+    }
+
+    public static void deleteCustomer(int id) throws SQLException {
+
+        PreparedStatement preparedStatement1 = connection.prepareStatement("DELETE  FROM real_customer WHERE id =?");
+        preparedStatement1.setInt(1, id);
+        preparedStatement1.executeUpdate();
+
+        PreparedStatement preparedStatement2 = connection.prepareStatement("DELETE  FROM customer WHERE id =?");
+        preparedStatement2.setInt(1, id);
+        preparedStatement2.executeUpdate();
     }
 }

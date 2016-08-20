@@ -32,7 +32,7 @@ public class RealCustomerLogic extends CustomerLogic{
         return RealCustomerCRUD.retrieveCustomer(id);
     }
     public static void deleteCustomer(int id) throws SQLException {
-        LegalCustomerCRUD.deleteCustomer(id);
+        RealCustomerCRUD.deleteCustomer(id);
     }
 
 }

@@ -19,6 +19,7 @@ import java.sql.SQLException;
 public class RetrieveLegalCustomerServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
         int id = Integer.parseInt(request.getParameter("id"));
         String output="";
         try {

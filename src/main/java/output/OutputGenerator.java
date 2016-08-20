@@ -275,11 +275,11 @@ public class OutputGenerator {
         stringBuilder.append("<body>");
         stringBuilder.append("            <div class=box-in>");
         stringBuilder.append("                <br>");
-        stringBuilder.append("                 <form action='UpdateLegalCustomerServlet' method='get'>");
+        stringBuilder.append("                 <form action='UpdateRealCustomerServlet' method='get'>");
         stringBuilder.append("                <h1>اطلاعات مشتری حقوقی :</h1>");
         stringBuilder.append("                <br>");
         stringBuilder.append("<input type='hidden' name='id' value='" + realCustomer.getId() + "'>");
-        stringBuilder.append("                    <table>");
+        stringBuilder.append("                    <table align='center'>");
         stringBuilder.append("                        <tr>");
         stringBuilder.append("                            <td>شماره مشتری</td>");
         stringBuilder.append("                            <td><input type='text' name='customerNumber' value='" + realCustomer.getCustomerNumber() + "' readonly ></td>");
