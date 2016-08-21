@@ -1,9 +1,8 @@
 package logic;
-
-import dataAccess.LegalCustomerCRUD;
 import dataAccess.RealCustomerCRUD;
 import dataAccess.connectionutil.DBConnection;
 import dataAccess.entity.RealCustomer;
+import exceptions.NoValidatedCustomerException;
 import exceptions.RequiredFieldException;
 
 import java.sql.Connection;
@@ -23,9 +22,11 @@ public class RealCustomerLogic extends CustomerLogic{
         }
         return true;
     }
-    public  static boolean checkField( String firstName, String lastName, String fatherName, String dateOfBirth, String internationalID) throws RequiredFieldException {
+    public  static boolean checkField( String firstName, String lastName, String fatherName, String dateOfBirth, String internationalID) throws RequiredFieldException, NoValidatedCustomerException, SQLException {
         if (firstName.trim().length() == 0 | lastName.trim().length() == 0 | fatherName.trim().length() == 0 | dateOfBirth.trim().length() == 0 | internationalID.trim().length() == 0)
             throw new RequiredFieldException();
+        if(!RealCustomerLogic.validateUniqueCustomer(internationalID))
+            throw  new NoValidatedCustomerException();
         return true;
     }
     public static RealCustomer retrieveCustomer(int id) throws SQLException {

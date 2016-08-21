@@ -78,7 +78,7 @@ public class CustomerLogic {
 
     }
 
-    public static void updateCustomer(int id, String companyName, String registrationDate, String economicID) throws SQLException, RequiredFieldException {
+    public static void updateCustomer(int id, String companyName, String registrationDate, String economicID) throws SQLException, RequiredFieldException, NoValidatedCustomerException {
         if (!LegalCustomerLogic.checkField(companyName, registrationDate, economicID))
             throw new RequiredFieldException();
         else

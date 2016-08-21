@@ -24,9 +24,11 @@ public class LegalCustomerLogic extends CustomerLogic
             return false;
         return true;
     }
-    public  static boolean checkField( String companyName, String registrationDate, String economicID) throws RequiredFieldException {
+    public  static boolean checkField( String companyName, String registrationDate, String economicID) throws RequiredFieldException, SQLException, NoValidatedCustomerException {
         if (companyName.trim().length() == 0 | registrationDate.trim().length() == 0 | economicID.trim().length() == 0)
-           return  false;
+           throw  new RequiredFieldException();
+        if(!LegalCustomerLogic.validateUniqueCustomer(economicID))
+            throw  new NoValidatedCustomerException();
         return true;
     }
     public static LegalCustomer retrieveCustomer(int id) throws SQLException {
