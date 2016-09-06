@@ -1,6 +1,6 @@
 body {
     font-size: 12px;
-    background: url(https://ib.bpi.ir/App_Themes/PasargadResponsive/images/Login/Blacklogintexture.jpg) repeat !important;
+    background: url(http://uupload.ir/files/0z2p_money-dollars-rubber-band-bank-photo-hd-wallpaper.jpg) no-repeat;
     font-family: "B Nazanin";
     font-weight: 300;
     direction: rtl;
@@ -127,6 +127,8 @@ body {
 .box-in{
     background-color: #f3f3f3;
     padding: 10px 20px 250px 20px;
+    margin: 100px 100px 100px 100px;
+
     text-align: center;
 
 }

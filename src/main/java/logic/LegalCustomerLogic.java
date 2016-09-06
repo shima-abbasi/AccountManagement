@@ -13,8 +13,7 @@ import java.sql.SQLException;
 /**
  * Created by Dotin school 5 on 8/7/2016.
  */
-public class LegalCustomerLogic extends CustomerLogic
-{
+public class LegalCustomerLogic extends CustomerLogic {
     static Connection connection = DBConnection.getDBConnection();
 
     public static boolean validateUniqueCustomer(String economicID) throws SQLException {
@@ -24,16 +23,18 @@ public class LegalCustomerLogic extends CustomerLogic
             return false;
         return true;
     }
-    public  static boolean checkField( String companyName, String registrationDate, String economicID) throws RequiredFieldException, SQLException, NoValidatedCustomerException {
-        if (companyName.trim().length() == 0 | registrationDate.trim().length() == 0 | economicID.trim().length() == 0)
-           throw  new RequiredFieldException();
-        if(!LegalCustomerLogic.validateUniqueCustomer(economicID))
-            throw  new NoValidatedCustomerException();
+
+    public static boolean checkField(String companyName, String registrationDate, String economicID) throws RequiredFieldException, SQLException, NoValidatedCustomerException {
+        if (companyName.trim().length() == 0 | registrationDate.trim().length() == 0 | economicID.trim().length() == 0) {
+            throw new RequiredFieldException();
+        }
         return true;
     }
+
     public static LegalCustomer retrieveCustomer(int id) throws SQLException {
         return LegalCustomerCRUD.retrieveCustomer(id);
     }
+
     public static void deleteCustomer(int id) throws SQLException {
         LegalCustomerCRUD.deleteCustomer(id);
     }

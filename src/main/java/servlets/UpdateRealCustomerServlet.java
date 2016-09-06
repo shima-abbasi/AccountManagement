@@ -1,5 +1,6 @@
 package servlets;
 
+import exceptions.NoValidatedCustomerException;
 import exceptions.RequiredFieldException;
 import logic.CustomerLogic;
 import output.OutputGenerator;
@@ -33,6 +34,9 @@ public class UpdateRealCustomerServlet extends HttpServlet {
             e.printStackTrace();
         } catch (RequiredFieldException e) {
             output = OutputGenerator.generateMessage("لطفا اطلاعات ضروری را تکمیل کنید","search_real_customer.html");
+        } catch (NoValidatedCustomerException e) {
+            output = OutputGenerator.generateMessage("کد ملی تکراری است","search_real_customer.html");
+
         }
         response.setContentType("text/html; charset=UTF-8");
         PrintWriter out = response.getWriter();

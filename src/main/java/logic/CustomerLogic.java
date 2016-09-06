@@ -81,13 +81,18 @@ public class CustomerLogic {
     public static void updateCustomer(int id, String companyName, String registrationDate, String economicID) throws SQLException, RequiredFieldException, NoValidatedCustomerException {
         if (!LegalCustomerLogic.checkField(companyName, registrationDate, economicID))
             throw new RequiredFieldException();
+        if (!LegalCustomerLogic.validateUniqueCustomer(economicID)) {
+            throw new NoValidatedCustomerException();
+        }
         else
             LegalCustomerCRUD.updateCustomer(id, companyName, registrationDate, economicID);
     }
 
-    public static void updateCustomer(int id, String firstName, String lastName, String fatherName, String dateOfBirth, String internationalID) throws SQLException, RequiredFieldException {
+    public static void updateCustomer(int id, String firstName, String lastName, String fatherName, String dateOfBirth, String internationalID) throws SQLException, RequiredFieldException, NoValidatedCustomerException {
         if (!RealCustomerLogic.checkField(firstName, lastName, fatherName, dateOfBirth, internationalID))
             throw new RequiredFieldException();
+        if(!RealCustomerLogic.validateUniqueCustomer(internationalID))
+            throw  new NoValidatedCustomerException();
         else
             RealCustomerCRUD.updateCustomer(id, firstName, lastName, fatherName, dateOfBirth, internationalID);
     }
